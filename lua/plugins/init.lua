@@ -46,31 +46,31 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "numToStr/Comment.nvim" -- Easily comment stuff
-  use "kyazdani42/nvim-web-devicons"
-  use "kyazdani42/nvim-tree.lua"
-  use "akinsho/bufferline.nvim"
-  use "moll/vim-bbye"
-  use "nvim-lualine/lualine.nvim"
-  use "akinsho/toggleterm.nvim"
-  use "ahmedkhalf/project.nvim"
-  use "lewis6991/impatient.nvim"
-  use "lukas-reineke/indent-blankline.nvim"
-  use "goolord/alpha-nvim"
+  use "kyazdani42/nvim-web-devicons" -- Add web devicons to vim
+  use "kyazdani42/nvim-tree.lua" -- Tree view
+  use "akinsho/bufferline.nvim" -- Bufferline
+  use "moll/vim-bbye" -- A simple way to close vim buffers
+  use "nvim-lualine/lualine.nvim" -- Add a custom statusline
+  use "akinsho/toggleterm.nvim" -- Toggle between terminal and normal mode
+  use "ahmedkhalf/project.nvim" -- Project management
+  use "lewis6991/impatient.nvim" -- Impatient.vim is a vim plugin that makes vim open faster
+  use "lukas-reineke/indent-blankline.nvim" -- Indentation with a blank line
+  use "goolord/alpha-nvim" -- Alpha is a dashboard-like plugin
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
-  use "folke/which-key.nvim"
+  use "folke/which-key.nvim" -- Show keybindings in popup
 
   -- Colorschemes
-  use "lunarvim/darkplus.nvim"
-  use "ghifarit53/tokyonight-vim"
-  use 'joshdick/onedark.vim'
-  use 'morhetz/gruvbox'
-  use 'drewtempelmeyer/palenight.vim'
-  use 'sainnhe/gruvbox-material'
-  use {'dracula/vim', as = 'dracula'}
-  use 'arcticicestudio/nord-vim'
-  use 'ivanlhz/vim-electron'
-  use 'ayu-theme/ayu-vim'
-  use 'romgrk/doom-one.vim'
+  use "lunarvim/darkplus.nvim" -- Dark theme
+  use "ghifarit53/tokyonight-vim" -- Tokyonight theme
+  use 'joshdick/onedark.vim' -- OneDark theme
+  use 'morhetz/gruvbox' -- Gruvbox theme
+  use 'drewtempelmeyer/palenight.vim' -- Palenight theme
+  use 'sainnhe/gruvbox-material' -- Gruvbox Material theme
+  use {'dracula/vim', as = 'dracula'} -- Dracula theme
+  use 'arcticicestudio/nord-vim' -- Nord theme
+  use 'ivanlhz/vim-electron' -- Electron theme
+  use 'ayu-theme/ayu-vim' -- Ayu theme
+  use 'romgrk/doom-one.vim' -- doom-one is a fork of doom-emacs
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -78,8 +78,8 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-path" -- path completions
   use "hrsh7th/cmp-cmdline" -- cmdline completions
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
-  use "hrsh7th/cmp-nvim-lsp"
-  use "github/copilot.vim"
+  use "hrsh7th/cmp-nvim-lsp" -- lsp completions
+  use "github/copilot.vim" -- Copilot completion
 
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine
@@ -92,17 +92,17 @@ return packer.startup(function(use)
   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
 
   -- Telescope
-  use "nvim-telescope/telescope.nvim"
+  use "nvim-telescope/telescope.nvim" -- telescope plugin for fuzzy find
 
   -- Treesitter
   use {
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
-  }
-  use "JoosepAlviste/nvim-ts-context-commentstring"
+  } -- treesitter plugin for syntax highlighting
+  use "JoosepAlviste/nvim-ts-context-commentstring" -- context commentstring plugin
 
   -- Git
-  use "lewis6991/gitsigns.nvim"
+  use "lewis6991/gitsigns.nvim" -- git commit signs
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
