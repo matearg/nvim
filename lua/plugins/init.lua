@@ -71,6 +71,7 @@ return packer.startup(function(use)
   use 'ivanlhz/vim-electron' -- Electron theme
   use 'ayu-theme/ayu-vim' -- Ayu theme
   use 'romgrk/doom-one.vim' -- Doom-one is a fork of doom-emacs
+  use 'KeitaNakamura/neodark.vim' -- Neodark theme
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
