@@ -70,7 +70,7 @@ return packer.startup(function(use)
   use 'arcticicestudio/nord-vim' -- Nord theme
   use 'ivanlhz/vim-electron' -- Electron theme
   use 'ayu-theme/ayu-vim' -- Ayu theme
-  use 'romgrk/doom-one.vim' -- doom-one is a fork of doom-emacs
+  use 'romgrk/doom-one.vim' -- Doom-one is a fork of doom-emacs
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
