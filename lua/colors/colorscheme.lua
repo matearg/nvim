@@ -1,7 +1,7 @@
 vim.cmd [[
 try
   set termguicolors
-  colorscheme gruvbox-material
+  colorscheme doom-one
 catch /^Vim\%((\a\+)\)\=:E185/
   set background=dark
   set termguicolors

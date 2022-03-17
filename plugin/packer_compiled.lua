@@ -234,10 +234,30 @@ _G.packer_plugins = {
     path = "C:\\Users\\mateo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-bbye",
     url = "https://github.com/moll/vim-bbye"
   },
+  ["vim-closetag"] = {
+    loaded = true,
+    path = "C:\\Users\\mateo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-closetag",
+    url = "https://github.com/alvan/vim-closetag"
+  },
+  ["vim-css-color"] = {
+    loaded = true,
+    path = "C:\\Users\\mateo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-css-color",
+    url = "https://github.com/ap/vim-css-color"
+  },
   ["vim-electron"] = {
     loaded = true,
     path = "C:\\Users\\mateo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-electron",
     url = "https://github.com/ivanlhz/vim-electron"
+  },
+  ["vim-plugin"] = {
+    loaded = true,
+    path = "C:\\Users\\mateo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-plugin",
+    url = "https://github.com/kiteco/vim-plugin"
+  },
+  ["vim-surround"] = {
+    loaded = true,
+    path = "C:\\Users\\mateo\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-surround",
+    url = "https://github.com/tpope/vim-surround"
   },
   ["which-key.nvim"] = {
     loaded = true,

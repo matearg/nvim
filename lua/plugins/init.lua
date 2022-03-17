@@ -58,6 +58,9 @@ return packer.startup(function(use)
   use "goolord/alpha-nvim" -- Alpha is a dashboard-like plugin
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim" -- Show keybindings in popup
+  use "tpope/vim-surround" -- Surround text with delimiters
+  use "alvan/vim-closetag" -- Close tag
+  use "ap/vim-css-color" -- Colorize css
 
   -- Colorschemes
   use "lunarvim/darkplus.nvim" -- Dark theme
@@ -74,6 +77,7 @@ return packer.startup(function(use)
 
   -- Completion plugins
   use "github/copilot.vim" -- Copilot completion
+  use "kiteco/vim-plugin" -- Kite completion
 
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine
