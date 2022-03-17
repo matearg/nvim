@@ -30,7 +30,7 @@ bufferline.setup {
     show_close_icon = true,
     show_tab_indicators = true,
     persist_buffer_sort = true, -- whether or not custom sorted buffers should persist
-    separator_style = "thick", -- | "thick" | "thin" | { 'any', 'any' },
+    separator_style = "thin", -- | "thick" | "thin" | { 'any', 'any' },
     enforce_regular_tabs = true,
     always_show_bufferline = true,
   },
