@@ -77,6 +77,9 @@ return packer.startup(function(use)
 
   -- Completion plugins
   use "github/copilot.vim" -- Copilot completion
+  use {
+      "neoclide/coc.nvim", branch = "release"
+  } -- Neovim coc
 
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine
