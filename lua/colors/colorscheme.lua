@@ -1,7 +1,7 @@
 vim.cmd [[
 try
   set termguicolors
-  colorscheme doom-one
+  colorscheme dracula
 catch /^Vim\%((\a\+)\)\=:E185/
   set background=dark
   set termguicolors

@@ -16,4 +16,4 @@ vim.g.dracula_underline = 1
 vim.g.dracula_undercurl = 1
 vim.g.dracula_full_special_attrs_support = 1
 vim.g.dracula_inverse = 1
-vim.g.dracula_colorterm = 1
+vim.g.dracula_colorterm = 0
