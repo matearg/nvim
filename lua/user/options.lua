@@ -34,3 +34,4 @@ vim.o.hlsearch = false   -- highlight matches
 vim.o.incsearch = true   -- incremental searching
 vim.o.ignorecase = true   -- searches are case insensitive...
 vim.o.smartcase = true   -- ... unless they contain at least one capital letter Basic configurations
+vim.o.completeopt = "menuone, noselect"

@@ -24,5 +24,7 @@ require'compe'.setup {
     path = true;
     buffer = true;
     nvim_lsp = true;
+    calc = true;
+    treesitter = true;
   };
 }
