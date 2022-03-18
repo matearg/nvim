@@ -76,7 +76,7 @@ return packer.startup(function(use)
   use 'romgrk/doom-one.vim' -- Doom-one is a fork of doom-emacs
 
   -- Completion plugins
-  use "github/copilot.vim" -- Copilot completion
+  -- use "github/copilot.vim" -- Copilot completion
   use {
       "neoclide/coc.nvim", branch = "release"
   } -- Neovim coc
