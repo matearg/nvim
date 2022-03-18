@@ -82,7 +82,6 @@ return packer.startup(function(use)
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
-  use "vim-syntastic/syntastic" -- syntax checker
 
   -- Telescope
   use "nvim-telescope/telescope.nvim" -- telescope plugin for fuzzy find
