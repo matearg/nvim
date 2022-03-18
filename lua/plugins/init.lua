@@ -75,10 +75,6 @@ return packer.startup(function(use)
   use 'ayu-theme/ayu-vim' -- Ayu theme
   use 'romgrk/doom-one.vim' -- Doom-one is a fork of doom-emacs
 
-  -- LSP plugins
-  use "neovim/nvim-lspconfig" -- LSP config
-  use "williamboman/nvim-lsp-installer" -- LSP installer
-
   -- Completion plugins
   use "github/copilot.vim" -- Copilot completion
 
