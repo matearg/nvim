@@ -80,8 +80,7 @@ return packer.startup(function(use)
   use "williamboman/nvim-lsp-installer" -- LSP installer
 
   -- Completion plugins
-  -- use "github/copilot.vim" -- Copilot completion
-  use "hrsh7th/nvim-compe" -- Compe completion
+  use "github/copilot.vim" -- Copilot completion
 
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine

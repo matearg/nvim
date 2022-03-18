@@ -1,4 +1,4 @@
--- Basic configs 
+-- Basic configs
 vim.bo.syntax = "on"   -- Enable syntax highlighting
 vim.wo.number = true   -- Show line numbers
 vim.wo.numberwidth = 1   -- Show line numbers with 1 digit
@@ -34,5 +34,3 @@ vim.o.hlsearch = false   -- highlight matches
 vim.o.incsearch = true   -- incremental searching
 vim.o.ignorecase = true   -- searches are case insensitive...
 vim.o.smartcase = true   -- ... unless they contain at least one capital letter Basic configurations
-vim.o.completeopt = "menuone"
-vim.o.completeopt = "noselect"
