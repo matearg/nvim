@@ -18,3 +18,4 @@ require "plugins.configs.telescope"
 require "plugins.configs.toggleterm"
 require "plugins.configs.treesitter"
 require "plugins.configs.whichkey"
+vim.cmd("source ~/AppData/Local/nvim/lua/plugins/configs/coc.vim")
