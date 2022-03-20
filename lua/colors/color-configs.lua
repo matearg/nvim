@@ -8,7 +8,7 @@ vim.g.gruvbox_material_transparent_background = 1
 vim.g.tokyonight_disable_italic_comment = 1
 vim.g.tokyonight_enable_italic = 0
 vim.g.tokyonight_style = 'night'  -- Avalible 'night', 'storm'
-vim.g.tokyonight_transparent_background = 0
+vim.g.tokyonight_transparent_background = 1
 -- Dracula
 vim.g.dracula_bold = 1
 vim.g.dracula_italic = 0
