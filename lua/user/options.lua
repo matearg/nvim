@@ -13,7 +13,6 @@ vim.bo.shiftwidth = 4   -- Set shiftwidth to 4
 vim.bo.tabstop = 4   -- Set tabstop to 4
 vim.bo.softtabstop = 4   -- Set softtabstop to 4
 vim.bo.autoindent = true   -- Disable autoindent
-vim.bo.smartindent = true    -- Make indenting smarter again
 vim.bo.expandtab = true   -- Expand tabs to spaces
 vim.o.laststatus = 2   -- Show status bar
 vim.o.showmode = false   -- Disable showmode
