@@ -35,5 +35,6 @@ vim.o.incsearch = true   -- incremental searching
 vim.o.ignorecase = true   -- searches are case insensitive...
 vim.o.smartcase = true   -- ... unless they contain at least one capital letter Basic configurations
 vim.o.splitright = true   -- Split windows to the right
-vim.o.splitbelow = true    -- Split windows down
+vim.o.splitbelow = true   -- Split windows below
 vim.o.emoji = true   -- Enable emojis
+vim.o.lazyredraw = true   -- Dont redraw the whole screen
