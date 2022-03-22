@@ -51,7 +51,8 @@ return packer.startup(function(use)
   use "akinsho/bufferline.nvim" -- Bufferline
   use "moll/vim-bbye" -- A simple way to close vim buffers
   use "nvim-lualine/lualine.nvim" -- Add a custom statusline
-  use "akinsho/toggleterm.nvim" -- Toggle between terminal and normal mode
+  -- use "akinsho/toggleterm.nvim" -- Toggle between terminal and normal mode
+  use "voldikss/vim-floaterm"
   use "ahmedkhalf/project.nvim" -- Project management
   use "lewis6991/impatient.nvim" -- Impatient.vim is a vim plugin that makes vim open faster
   use "lukas-reineke/indent-blankline.nvim" -- Indentation with a blank line
@@ -65,15 +66,15 @@ return packer.startup(function(use)
   -- Colorschemes
   use "lunarvim/darkplus.nvim" -- Dark theme
   use "ghifarit53/tokyonight-vim" -- Tokyonight theme
-  use 'joshdick/onedark.vim' -- OneDark theme
-  use 'morhetz/gruvbox' -- Gruvbox theme
-  use 'drewtempelmeyer/palenight.vim' -- Palenight theme
-  use 'sainnhe/gruvbox-material' -- Gruvbox Material theme
-  use {'dracula/vim', as = 'dracula'} -- Dracula theme
-  use 'arcticicestudio/nord-vim' -- Nord theme
-  use 'ivanlhz/vim-electron' -- Electron theme
-  use 'ayu-theme/ayu-vim' -- Ayu theme
-  use 'romgrk/doom-one.vim' -- Doom-one is a fork of doom-emacs
+  use "joshdick/onedark.vim" -- OneDark theme
+  use "morhetz/gruvbox" -- Gruvbox theme
+  use "drewtempelmeyer/palenight.vim" -- Palenight theme
+  use "sainnhe/gruvbox-material" -- Gruvbox Material theme
+  use {"dracula/vim", as = "dracula"} -- Dracula theme
+  use "arcticicestudio/nord-vim" -- Nord theme
+  use "ivanlhz/vim-electron" -- Electron theme
+  use "ayu-theme/ayu-vim" -- Ayu theme
+  use "romgrk/doom-one.vim" -- Doom-one is a fork of doom-emacs
 
   -- Completion plugins
   -- use "github/copilot.vim" -- Copilot completion

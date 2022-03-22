@@ -15,7 +15,8 @@ require "plugins.configs.lualine"
 require "plugins.configs.nvim-tree"
 require "plugins.configs.project"
 require "plugins.configs.telescope"
-require "plugins.configs.toggleterm"
+-- require "plugins.configs.toggleterm"
 require "plugins.configs.treesitter"
 require "plugins.configs.whichkey"
 vim.cmd("source ~/AppData/Local/nvim/lua/plugins/configs/coc.vim")
+vim.cmd("source ~/AppData/Local/nvim/lua/plugins/configs/floaterm.vim")
