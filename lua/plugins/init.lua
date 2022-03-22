@@ -51,8 +51,7 @@ return packer.startup(function(use)
   use "akinsho/bufferline.nvim" -- Bufferline
   use "moll/vim-bbye" -- A simple way to close vim buffers
   use "nvim-lualine/lualine.nvim" -- Add a custom statusline
-  -- use "akinsho/toggleterm.nvim" -- Toggle between terminal and normal mode
-  use "voldikss/vim-floaterm"
+  use "voldikss/vim-floaterm"   -- A floating terminal
   use "ahmedkhalf/project.nvim" -- Project management
   use "lewis6991/impatient.nvim" -- Impatient.vim is a vim plugin that makes vim open faster
   use "lukas-reineke/indent-blankline.nvim" -- Indentation with a blank line
