@@ -9,7 +9,7 @@ require('lualine').setup {
   },
   sections = {
     lualine_a = {'mode'},
-    lualine_b = {'branch',     
+    lualine_b = {'branch',
       {
       'diff',
       colored = true, -- Displays a colored diff status if set to true
