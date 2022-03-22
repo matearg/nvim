@@ -15,7 +15,7 @@ toggleterm.setup({
 	persist_size = true,
 	direction = "float",
 	close_on_exit = true,
-	shell = "pwsh.exe -nologo",
+	shell = "pwsh.exe --nologo",
 	float_opts = {
 		border = "curved",
 		winblend = 0,
