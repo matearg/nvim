@@ -63,7 +63,7 @@ return packer.startup(function(use)
   use "ap/vim-css-color" -- Colorize css
 
   -- Colorschemes
-  use "lunarvim/darkplus.nvim" -- Dark theme
+  use "Mofiqul/vscode.nvim"
   use "ghifarit53/tokyonight-vim" -- Tokyonight theme
   use "joshdick/onedark.vim" -- OneDark theme
   use "morhetz/gruvbox" -- Gruvbox theme
