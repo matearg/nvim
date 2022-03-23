@@ -65,7 +65,7 @@ return packer.startup(function(use)
   -- Colorschemes
   use "Mofiqul/vscode.nvim"
   use "ghifarit53/tokyonight-vim" -- Tokyonight theme
-  use "joshdick/onedark.vim" -- OneDark theme
+  use "navarasu/onedark.nvim" -- OneDark theme
   use "morhetz/gruvbox" -- Gruvbox theme
   use "drewtempelmeyer/palenight.vim" -- Palenight theme
   use "sainnhe/gruvbox-material" -- Gruvbox Material theme

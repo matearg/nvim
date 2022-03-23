@@ -22,5 +22,23 @@ vim.g.dracula_inverse = 1
 vim.g.dracula_colorterm = 1
 -- VScode.nivm
 vim.g.vscode_style = "dark"
+vim.g.vscode_transparent = true
 vim.g.vscode_italic_comment = 0
 vim.g.vscode_disable_nvimtree_bg = false
+-- OneDark
+require('onedark').setup  {
+    style = 'deep', -- Chose between 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer', 'light'
+    transparent = true,
+    code_style = {
+        comments = 'none',
+        keywords = 'bold',
+        functions = 'bold',
+        strings = 'none',
+        variables = 'none'
+    },
+    diagnostics = {
+        darker = true,
+        undercurl = true,
+        background = true,
+    },
+}

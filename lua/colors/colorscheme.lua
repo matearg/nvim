@@ -1,7 +1,7 @@
 vim.cmd [[
 try
   set termguicolors
-  colorscheme vscode
+  colorscheme onedark
 catch /^Vim\%((\a\+)\)\=:E185/
   set background=dark
   set termguicolors
