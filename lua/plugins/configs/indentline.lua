@@ -43,10 +43,3 @@ vim.g.indent_blankline_context_patterns = {
 }
 -- HACK: work-around for https://github.com/lukas-reineke/indent-blankline.nvim/issues/59
 vim.wo.colorcolumn = "99999"
-
-vim.opt.list = true
-vim.opt.listchars:append "eol: ↴"
-
-indent_blankline.setup({
-	show_end_of_line = true,
-})
