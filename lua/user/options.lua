@@ -22,7 +22,6 @@ vim.wo.wrap = false   -- Disable wrapping
 vim.wo.cursorline = true   -- Highlight current line
 vim.o.cmdheight = 2   -- Set cmdheight to 2
 vim.wo.signcolumn = "auto:9"   -- Show signs in the right side of the screen
-vim.bo.swapfile = false   -- Disable swapfile
 vim.o.hidden = true   -- Hide buffers but let them open
 vim.o.backup = false   -- Disable backup files
 vim.bo.swapfile = false   -- Disable swapfile
