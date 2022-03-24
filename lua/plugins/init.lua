@@ -60,7 +60,7 @@ return packer.startup(function(use)
   use 'folke/which-key.nvim' -- Show keybindings in popup
   use 'tpope/vim-surround' -- Surround text with delimiters
   use 'alvan/vim-closetag' -- Close tag
-  use 'ap/vim-css-color' -- Colorize css
+  use 'norcalli/nvim-colorizer.lua' -- Colorize nvim
 
   -- Colorschemes
   use 'Mofiqul/vscode.nvim'
