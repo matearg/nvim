@@ -148,7 +148,6 @@ local mappings = {
   r = {
     name = "Coc",
     n = "Coc rename",
-    f = "Coc format selection",
   },
 }
 
