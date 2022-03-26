@@ -41,3 +41,10 @@ vim.g.indent_blankline_context_patterns = {
 	"import_statement",
 	"operation_type",
 }
+
+vim.opt.list = true
+vim.opt.listchars:append("eol:↴")
+
+require("indent_blankline").setup {
+    show_end_of_line = true,
+}
