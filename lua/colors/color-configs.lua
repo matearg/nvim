@@ -25,7 +25,7 @@ vim.g.dracula_colorterm = 0
 
 -- VScode.nivm
 vim.g.vscode_style = "dark"
-vim.g.vscode_transparent = true
+vim.g.vscode_transparent = false
 vim.g.vscode_italic_comment = 0
 vim.g.vscode_disable_nvimtree_bg = true
 
