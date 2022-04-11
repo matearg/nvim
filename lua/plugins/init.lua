@@ -70,7 +70,7 @@ return packer.startup(function(use)
   use 'drewtempelmeyer/palenight.vim' -- Palenight theme
   use 'sainnhe/gruvbox-material' -- Gruvbox Material theme
   use {'dracula/vim', as = 'dracula'} -- Dracula theme
-  use 'shaunsingh/nord.nvim' -- Nord theme
+  use 'arcticicestudio/nord-vim' -- Nord theme
   use 'ivanlhz/vim-electron' -- Electron theme
   use 'ayu-theme/ayu-vim' -- Ayu theme
   use 'romgrk/doom-one.vim' -- Doom-one is a fork of doom-emacs
