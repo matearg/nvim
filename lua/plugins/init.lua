@@ -48,7 +48,7 @@ return packer.startup(function(use)
   use 'numToStr/Comment.nvim' -- Easily comment stuff
   use 'kyazdani42/nvim-web-devicons' -- Add web devicons to vim
   use 'kyazdani42/nvim-tree.lua' -- Tree view
-  use 'akinsho/bufferline.nvim' -- Bufferline
+  use {'akinsho/bufferline.nvim', tag = "*"} -- Bufferline
   use 'moll/vim-bbye' -- A simple way to close vim buffers
   use 'nvim-lualine/lualine.nvim' -- Add a custom statusline
   use 'voldikss/vim-floaterm'   -- A floating terminal
@@ -70,7 +70,7 @@ return packer.startup(function(use)
   use 'drewtempelmeyer/palenight.vim' -- Palenight theme
   use 'sainnhe/gruvbox-material' -- Gruvbox Material theme
   use {'dracula/vim', as = 'dracula'} -- Dracula theme
-  use 'arcticicestudio/nord-vim' -- Nord theme
+  use 'shaunsingh/nord.nvim' -- Nord theme
   use 'ivanlhz/vim-electron' -- Electron theme
   use 'ayu-theme/ayu-vim' -- Ayu theme
   use 'romgrk/doom-one.vim' -- Doom-one is a fork of doom-emacs
