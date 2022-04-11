@@ -8,6 +8,10 @@ vim.g.gruvbox_material_palette = 'original'
 vim.g.gruvbox_material_statusline_style = 'original'
 vim.g.gruvbox_material_visual = 'reverse'
 
+-- Gruvbox
+vim.g.gruvbox_contrast_dark = 'hard'  -- Avalible 'soft', 'medium', 'hard'
+vim.g.gruvbox_bold = 1
+
 -- Tokyonight
 vim.g.tokyonight_disable_italic_comment = 1
 vim.g.tokyonight_enable_italic = 0
@@ -24,14 +28,14 @@ vim.g.dracula_inverse = 1
 vim.g.dracula_colorterm = 0
 
 -- VScode.nivm
-vim.g.vscode_style = "dark"
+vim.g.vscode_style = 'dark'
 vim.g.vscode_transparent = false
 vim.g.vscode_italic_comment = 0
 vim.g.vscode_disable_nvimtree_bg = true
 
 -- OneDark
 require('onedark').setup  {
-    style = 'dark', -- Chose between 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer', 'light'
+    style = 'deep', -- Chose between 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer', 'light'
     transparent = true,
     code_style = {
         comments = 'none',
