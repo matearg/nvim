@@ -19,7 +19,7 @@ end
 vim.cmd [[
   augroup packer_user_config
     autocmd!
-    autocmd BufWritePost init.lua source <afile> | PackerSync
+    autocmd BufWritePost plugins.lua source <afile> | PackerSync
   augroup end
 ]]
 
@@ -53,24 +53,16 @@ return packer.startup(function(use)
   use 'nvim-lualine/lualine.nvim' -- Add a custom statusline
   use 'voldikss/vim-floaterm'   -- A floating terminal
   use 'ahmedkhalf/project.nvim' -- Project management
-  use 'lewis6991/impatient.nvim' -- Impatient.vim is a vim plugin that makes vim open faster
   use 'lukas-reineke/indent-blankline.nvim' -- Indentation with a blank line
   use 'goolord/alpha-nvim' -- Alpha is a dashboard-like plugin
-  use 'antoinemadec/FixCursorHold.nvim' -- This is needed to fix lsp doc highlight
   use 'folke/which-key.nvim' -- Show keybindings in popup
   use 'tpope/vim-surround' -- Surround text with delimiters
-  use 'alvan/vim-closetag' -- Close tag
   use 'norcalli/nvim-colorizer.lua' -- Colorize nvim
 
   -- Colorschemes
-  use 'Mofiqul/vscode.nvim'
-  use 'ghifarit53/tokyonight-vim' -- Tokyonight theme
   use 'navarasu/onedark.nvim' -- OneDark theme
-  use 'morhetz/gruvbox' -- Gruvbox theme
-  use 'drewtempelmeyer/palenight.vim' -- Palenight theme
   use 'sainnhe/gruvbox-material' -- Gruvbox Material theme
   use {'dracula/vim', as = 'dracula'} -- Dracula theme
-  use 'romgrk/doom-one.vim' -- Doom-one is a fork of doom-emacs
 
   -- Completion plugins
   -- use 'github/copilot.vim' -- Copilot completion
