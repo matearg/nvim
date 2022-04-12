@@ -58,6 +58,7 @@ return packer.startup(function(use)
   use 'folke/which-key.nvim' -- Show keybindings in popup
   use 'tpope/vim-surround' -- Surround text with delimiters
   use 'norcalli/nvim-colorizer.lua' -- Colorize nvim
+  use 'lewis6991/impatient.nvim' -- Improve vim loading speeds
 
   -- Colorschemes
   use 'navarasu/onedark.nvim' -- OneDark theme

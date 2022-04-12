@@ -12,6 +12,7 @@ vim.o.showmatch = true   -- Show matching brackets
 vim.bo.shiftwidth = 4   -- Set shiftwidth to 4
 vim.bo.tabstop = 4   -- Set tabstop to 4
 vim.bo.softtabstop = 4   -- Disable softtabstop
+vim.bo.smartindent = true   -- Make indent smart again
 vim.bo.autoindent = true   -- Enable autoindent
 vim.bo.expandtab = true   -- Expand tabs to spaces
 vim.o.laststatus = 2   -- Show status bar
