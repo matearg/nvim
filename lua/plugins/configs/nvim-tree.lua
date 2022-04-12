@@ -21,7 +21,6 @@ vim.g.nvim_tree_icons = {
     symlink = "",
   },
 }
--- vim.g.nvim_tree_indent_markers = 1
 
 local status_ok, nvim_tree = pcall(require, "nvim-tree")
 if not status_ok then
@@ -44,7 +43,6 @@ nvim_tree.setup {
     "dashboard",
     "alpha",
   },
-  -- auto_close = true,
   open_on_tab = false,
   hijack_cursor = false,
   update_cwd = true,
@@ -96,6 +94,16 @@ nvim_tree.setup {
     },
     number = false,
     relativenumber = false,
+  },
+  renderer = {
+    indent_markers = {
+      enable = true,
+      icons = {
+	conrner = "└ ",
+	edge = "│ ",
+	none = "  ",
+      },
+    },
   },
   trash = {
     cmd = "trash",
