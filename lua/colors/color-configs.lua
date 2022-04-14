@@ -3,7 +3,7 @@ vim.g.gruvbox_material_enable_italic = 0
 vim.g.gruvbox_material_disable_italic_comment = 1
 vim.g.gruvbox_material_background = 'medium'  -- Avalible 'soft', 'medium', 'hard'
 vim.g.gruvbox_material_enable_bold = 1
-vim.g.gruvbox_material_transparent_background = 0
+vim.g.gruvbox_material_transparent_background = 1
 vim.g.gruvbox_material_palette = 'original'
 vim.g.gruvbox_material_statusline_style = 'original'
 vim.g.gruvbox_material_visual = 'reverse'
@@ -19,7 +19,7 @@ vim.g.dracula_colorterm = 0 -- Set transparency
 
 -- VScode.nvim
 vim.g.vscode_style = 'dark'
-vim.g.vscode_transparent = false
+vim.g.vscode_transparent = true
 vim.g.vscode_italic_comment = 0
 vim.g.vscode_disable_nvimtree_bg = true
 
