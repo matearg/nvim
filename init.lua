@@ -18,5 +18,5 @@ require "plugins.configs.project"
 require "plugins.configs.telescope"
 require "plugins.configs.treesitter"
 require "plugins.configs.whichkey"
+require "plugins.configs.floaterm"
 vim.cmd("source ~/AppData/Local/nvim/lua/plugins/configs/coc.vim")
-vim.cmd("source ~/AppData/Local/nvim/lua/plugins/configs/floaterm.vim")
