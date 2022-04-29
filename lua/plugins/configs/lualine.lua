@@ -9,6 +9,7 @@ lualine.setup {
     theme = 'auto',
     component_separators = { left = '', right = ''}, -- Avalible '', { left = '', right = ''}, { left = '', right = ''}, { left = '', right = ''}
     section_separators = { left = '', right = ''}, -- Avalible '', { left = '', right = ''}, { left = '', right = ''}, { left = '', right = ''}
+    globalstatus = true,
   },
   sections = {
     lualine_a = {'mode'},
@@ -29,7 +30,7 @@ lualine.setup {
                     -- or nil on failure. count <= 0 won't be displayed.
       }, 'diagnostics'
     },
-    lualine_c = {'filename'},
+    lualine_c = {{'filename', path = 1}},
     lualine_x = {'encoding', 'fileformat', 'filetype'},
     lualine_y = {'progress'},
     lualine_z = {'location'}
