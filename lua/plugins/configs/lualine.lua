@@ -7,10 +7,8 @@ lualine.setup {
   options = {
     icons_enabled = true,
     theme = 'auto',
-    -- component_separators = { left = '', right = ''},
-    -- section_separators = { left = '', right = ''},
-    component_separators = '',
-    section_separators = '',
+    component_separators = { left = '', right = ''}, -- Avalible '', { left = '', right = ''}, { left = '', right = ''}, { left = '', right = ''}
+    section_separators = { left = '', right = ''}, -- Avalible '', { left = '', right = ''}, { left = '', right = ''}, { left = '', right = ''}
   },
   sections = {
     lualine_a = {'mode'},
@@ -20,9 +18,9 @@ lualine.setup {
       colored = true, -- Displays a colored diff status if set to true
       diff_color = {
         -- Same color values as the general color option can be used here.
-        added    = 'DiffAdd',    -- Changes the diff's added color
-        modified = 'DiffChange', -- Changes the diff's modified color
-        removed  = 'DiffDelete', -- Changes the diff's removed color you
+        -- added    = 'DiffAdd',    -- Changes the diff's added color
+        -- modified = 'DiffChange', -- Changes the diff's modified color
+        -- removed  = 'DiffDelete', -- Changes the diff's removed color you
       },
       symbols = {added = '+', modified = '~', removed = '-'}, -- Changes the symbols used by the diff.
       source = nil, -- A function that works as a data source for diff.
