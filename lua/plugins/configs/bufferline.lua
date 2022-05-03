@@ -64,7 +64,6 @@ bufferline.setup {
     tab_selected = {
       guifg = { attribute = "fg", highlight = "Normal" },
       guibg = { attribute = "bg", highlight = "Normal" },
-      gui = "none",
     },
     tab = {
       guifg = { attribute = "fg", highlight = "TabLine" },
@@ -101,7 +100,6 @@ bufferline.setup {
       guifg = { attribute = "fg", highlight = "TabLine" },
       guibg = { attribute = "bg", highlight = "TabLine" },
     },
-
     separator = {
       guifg = { attribute = "bg", highlight = "TabLine" },
       guibg = { attribute = "bg", highlight = "TabLine" },
