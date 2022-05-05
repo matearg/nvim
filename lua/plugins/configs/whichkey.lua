@@ -43,8 +43,8 @@ local setup = {
     scroll_up = "<c-u>", -- binding to scroll up inside the popup
   },
   window = {
-    border = "rounded", -- none, single, double, shadow
-    position = "bottom", -- bottom, top
+    border = "double", -- Avalible none, single, double, shadow, rounded
+    position = "bottom", -- Avalible bottom, top
     margin = { 1, 0, 1, 0 }, -- extra window margin [top, right, bottom, left]
     padding = { 2, 2, 2, 2 }, -- extra window padding [top, right, bottom, left]
     winblend = 0,
