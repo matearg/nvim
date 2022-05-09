@@ -2,5 +2,9 @@
 "diagnostic.errorSign": "",
 "diagnostic.warningSign": "",
 "diagnostic.infoSign": "",
-"diagnostic.hintSign": ""
+"diagnostic.hintSign": "",
+"colors.filetypes": [""],
+"diagnostic.virtualText": true,
+"diagnostic.virtualTextCurrentLineOnly": false,
+"hover.target": "float"
 }

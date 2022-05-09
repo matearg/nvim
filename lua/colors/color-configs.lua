@@ -5,9 +5,10 @@ vim.g.gruvbox_material_background = 'medium'  -- Avalible 'soft', 'medium', 'har
 vim.g.gruvbox_material_enable_bold = 1
 vim.g.gruvbox_material_transparent_background = 0
 vim.g.gruvbox_material_show_eob = 0
-vim.g.gruvbox_material_palette = 'mix' -- Avalible 'material', 'original', 'mix'
-vim.g.gruvbox_material_statusline_style = 'mix' -- Avalible 'material', 'original', 'mix'
+vim.g.gruvbox_material_palette = 'original' -- Avalible 'material', 'original', 'mix'
+vim.g.gruvbox_material_statusline_style = 'original' -- Avalible 'material', 'original', 'mix'
 vim.g.gruvbox_material_visual = 'reverse'
+vim.g.gruvbox_material_diagnostic_virtual_text = 'colored'
 
 -- Dracula (Deprecated)
 -- vim.g.dracula_bold = 1
