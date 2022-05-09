@@ -83,7 +83,7 @@ nvim_tree.setup {
     width = 30,
     height = 30,
     hide_root_folder = false,
-    side = "left",
+    side = "right",
     preserve_window_proportions = false,
     mappings = {
       custom_only = false,
@@ -99,10 +99,10 @@ nvim_tree.setup {
   },
   renderer = {
     indent_markers = {
-      enable = true,
+      enable = false,
       icons = {
-	corner = "╚ ", -- Avalible "└ ", "╰ ", "╚ "
-	edge = "║ ", -- Avalible "║ "
+	corner = "└ ", -- Avalible "└ ", "╰ ", "╚ "
+	edge = "│  ", -- Avalible "║ ", "│ "
 	none = "  ",
       },
     },
