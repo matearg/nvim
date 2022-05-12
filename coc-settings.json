@@ -4,7 +4,7 @@
 "diagnostic.infoSign": "",
 "diagnostic.hintSign": "",
 "colors.filetypes": [""],
-"diagnostic.virtualText": true,
+"diagnostic.virtualText": false,
 "diagnostic.virtualTextCurrentLineOnly": false,
 "hover.target": "float"
 }
