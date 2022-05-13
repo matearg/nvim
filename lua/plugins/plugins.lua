@@ -63,9 +63,7 @@ return packer.startup(function(use)
   -- Colorschemes
   use 'navarasu/onedark.nvim' -- OneDark theme
   use 'sainnhe/gruvbox-material' -- Gruvbox Material theme
-  use 'Mofiqul/dracula.nvim' -- Dracula written in lua
   use 'Mofiqul/vscode.nvim' -- VSCode like theme
-  use 'drewtempelmeyer/palenight.vim' -- Palenight theme
 
   -- Completion plugins
   -- use 'github/copilot.vim' -- Copilot completion
