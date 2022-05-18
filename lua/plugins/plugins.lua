@@ -59,7 +59,6 @@ return packer.startup(function(use)
   use 'tpope/vim-surround' -- Surround text with delimiters
   use 'norcalli/nvim-colorizer.lua' -- Colorize nvim
   use 'lewis6991/impatient.nvim' -- Improve vim loading speeds
-  use 'sbdchd/neoformat' -- Format code
 
   -- Colorschemes
   use 'navarasu/onedark.nvim' -- OneDark theme
