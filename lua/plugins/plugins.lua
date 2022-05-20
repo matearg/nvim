@@ -64,6 +64,7 @@ return packer.startup(function(use)
   use 'navarasu/onedark.nvim' -- OneDark theme
   use 'sainnhe/gruvbox-material' -- Gruvbox Material theme
   use 'Mofiqul/vscode.nvim' -- VSCode like theme
+  use 'yashguptaz/calvera-dark.nvim' -- Calvera dark theme
 
   -- Completion plugins
   -- use 'github/copilot.vim' -- Copilot completion

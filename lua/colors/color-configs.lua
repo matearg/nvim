@@ -33,3 +33,14 @@ require('onedark').setup  {
         background = true,
     },
 }
+
+-- Calvera dark
+vim.g.calvera_italic_comments = false
+vim.g.calvera_italic_keywords = false
+vim.g.calvera_italic_functions = false
+vim.g.calvera_italic_variables = false
+vim.g.calvera_contrast = true
+vim.g.calvera_borders = true
+vim.g.calvera_disable_background = false
+vim.g.transparent_bg = false
+vim.g.calvera_hide_eob = true
