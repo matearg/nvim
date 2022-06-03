@@ -19,7 +19,7 @@ vim.g.vscode_disable_nvimtree_bg = true
 -- OneDark
 require('onedark').setup  {
     style = 'darker', -- Chose between 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer', 'light'
-    transparent = false,
+    transparent = true,
     code_style = {
         comments = 'none',
         keywords = 'none',
