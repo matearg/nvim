@@ -1,10 +1,10 @@
 {
-"diagnostic.errorSign": "",
-"diagnostic.warningSign": "",
-"diagnostic.infoSign": "",
-"diagnostic.hintSign": "",
-"colors.filetypes": [""],
-"diagnostic.virtualText": false,
-"diagnostic.virtualTextCurrentLineOnly": false,
-"hover.target": "float"
+  "diagnostic.errorSign": "",
+  "diagnostic.warningSign": "",
+  "diagnostic.infoSign": "",
+  "diagnostic.hintSign": "",
+  "colors.filetypes": [""],
+  "diagnostic.virtualText": false,
+  "diagnostic.virtualTextCurrentLineOnly": false,
+  "hover.target": "float"
 }
