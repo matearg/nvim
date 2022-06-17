@@ -4,7 +4,7 @@ require "user.autocommands"
 require "plugins.plugins"
 require "colors.color-configs"
 require "colors.colorscheme"
-require "plugins.configs.impatient"
+require'impatient'.enable_profile()
 require "plugins.configs.alpha"
 require "plugins.configs.autopairs"
 require "plugins.configs.bufferline"
