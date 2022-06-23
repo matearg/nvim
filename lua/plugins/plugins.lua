@@ -64,6 +64,7 @@ return packer.startup(function(use)
   use 'navarasu/onedark.nvim' -- OneDark theme
   use 'sainnhe/gruvbox-material' -- Gruvbox Material theme
   use 'LunarVim/darkplus.nvim'
+  use 'tanvirtin/monokai.nvim'
 
   -- Completion plugins
   -- use 'github/copilot.vim' -- Copilot completion

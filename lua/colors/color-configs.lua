@@ -13,7 +13,7 @@ vim.g.gruvbox_material_diagnostic_virtual_text = 'colored'
 -- OneDark
 require('onedark').setup  {
     style = 'darker', -- Chose between 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer', 'light'
-    transparent = true,
+    transparent = false,
     code_style = {
         comments = 'none',
         keywords = 'none',
