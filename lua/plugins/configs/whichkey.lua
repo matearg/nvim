@@ -92,6 +92,8 @@ local mappings = {
     "Find files",
   },
   ["P"] = { "<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects" },
+  ["t"] = { "<cmd>FloatermToggle<cr>", "Terminal" },
+  ["m"] = { "<cmd>Alpha<cr>", "Main Page" },
 
   a = {
     name = "Coc",
@@ -140,10 +142,6 @@ local mappings = {
     C = { "<cmd>Telescope commands<cr>", "Commands" },
   },
 
-  t = {
-    name = "Terminal",
-    f = { "<cmd>FloatermToggle<cr>", "Float" },
-  },
 
   r = {
     name = "Coc",
