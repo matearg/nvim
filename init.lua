@@ -8,6 +8,7 @@ require"impatient".enable_profile()
 require "plugins.configs.alpha"
 require "plugins.configs.autopairs"
 require "plugins.configs.bufferline"
+require "plugins.configs.comment"
 require "plugins.configs.colorizer"
 require "plugins.configs.gitsigns"
 require "plugins.configs.indentline"
