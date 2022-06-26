@@ -52,8 +52,7 @@ return packer.startup(function(use)
   use 'moll/vim-bbye' -- A simple way to close vim buffers
   use 'nvim-lualine/lualine.nvim' -- Add a custom statusline
   use 'voldikss/vim-floaterm'   -- A floating terminal
-  use 'ahmedkhalf/project.nvim' -- Project management
-  use 'lukas-reineke/indent-blankline.nvim' -- Indentation with a blank line
+  use 'lukas-reineke/indent-blankline.nvim' -- Indentation marks
   use 'goolord/alpha-nvim' -- Alpha is a dashboard-like plugin
   use 'folke/which-key.nvim' -- Show keybindings in popup
   use 'tpope/vim-surround' -- Surround text with delimiters
@@ -68,7 +67,7 @@ return packer.startup(function(use)
 
   -- Completion plugins
   -- use 'github/copilot.vim' -- Copilot completion
-  use {'neoclide/coc.nvim', branch = 'release'} -- Neovim coc
+  -- use {'neoclide/coc.nvim', branch = 'release'} -- Neovim coc
 
   -- snippets
   use 'L3MON4D3/LuaSnip' --snippet engine
@@ -76,6 +75,7 @@ return packer.startup(function(use)
 
   -- Telescope
   use 'nvim-telescope/telescope.nvim' -- telescope plugin for fuzzy find
+  use 'ahmedkhalf/project.nvim' -- Project management
 
   -- Treesitter
   use {
@@ -86,6 +86,15 @@ return packer.startup(function(use)
 
   -- Git
   use 'lewis6991/gitsigns.nvim' -- git commit signs
+
+
+  -- Lspuse 'tpope/vim-commentary'
+  use 'mhartington/formatter.nvim'
+  use 'neovim/nvim-lspconfig'
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/nvim-cmp'
+  use 'saadparwaiz1/cmp_luasnip'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

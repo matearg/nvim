@@ -6,6 +6,7 @@ require "colors.color-configs"
 require "colors.colorscheme"
 require'impatient'.enable_profile()
 require "plugins.configs.alpha"
+require "plugins.configs.lsp"
 require "plugins.configs.autopairs"
 require "plugins.configs.bufferline"
 require "plugins.configs.colorizer"
@@ -19,4 +20,4 @@ require "plugins.configs.telescope"
 require "plugins.configs.treesitter"
 require "plugins.configs.whichkey"
 require "plugins.configs.floaterm"
-vim.cmd("source ~/AppData/Local/nvim/lua/plugins/configs/coc.vim")
+-- vim.cmd("source ~/AppData/Local/nvim/lua/plugins/configs/coc.vim")
