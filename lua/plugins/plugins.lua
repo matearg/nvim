@@ -44,8 +44,6 @@ return packer.startup(function(use)
   use 'wbthomason/packer.nvim' -- Have packer manage itself
   use 'nvim-lua/popup.nvim' -- An implementation of the Popup API from vim in Neovim
   use 'nvim-lua/plenary.nvim' -- Useful lua functions used ny lots of plugins
-  use 'windwp/nvim-autopairs' -- Autopairs, integrates with both cmp and treesitter
-  use 'numToStr/Comment.nvim' -- Easily comment stuff
   use 'kyazdani42/nvim-web-devicons' -- Add web devicons to vim
   use 'kyazdani42/nvim-tree.lua' -- Tree view
   use {'akinsho/bufferline.nvim', tag = "v2.*"} -- Bufferline
@@ -53,29 +51,17 @@ return packer.startup(function(use)
   use 'nvim-lualine/lualine.nvim' -- Add a custom statusline
   use 'voldikss/vim-floaterm'   -- A floating terminal
   use 'lukas-reineke/indent-blankline.nvim' -- Indentation marks
-  use 'goolord/alpha-nvim' -- Alpha is a dashboard-like plugin
-  use 'folke/which-key.nvim' -- Show keybindings in popup
-  use 'tpope/vim-surround' -- Surround text with delimiters
-  use 'norcalli/nvim-colorizer.lua' -- Colorize nvim
-  use 'lewis6991/impatient.nvim' -- Improve vim loading speeds
 
   -- Colorschemes
   use 'navarasu/onedark.nvim' -- OneDark theme
-  use 'sainnhe/gruvbox-material' -- Gruvbox Material theme
-  use 'LunarVim/darkplus.nvim'
-  use 'tanvirtin/monokai.nvim'
 
   -- Completion plugins
-  -- use 'github/copilot.vim' -- Copilot completion
-  -- use {'neoclide/coc.nvim', branch = 'release'} -- Neovim coc
 
   -- snippets
   use 'L3MON4D3/LuaSnip' --snippet engine
   use 'rafamadriz/friendly-snippets' -- a bunch of snippets to use
 
   -- Telescope
-  use 'nvim-telescope/telescope.nvim' -- telescope plugin for fuzzy find
-  use 'ahmedkhalf/project.nvim' -- Project management
 
   -- Treesitter
   use {
@@ -87,14 +73,9 @@ return packer.startup(function(use)
   -- Git
   use 'lewis6991/gitsigns.nvim' -- git commit signs
 
-
   -- Lspuse 'tpope/vim-commentary'
   use 'mhartington/formatter.nvim'
   use 'neovim/nvim-lspconfig'
-  use 'hrsh7th/cmp-nvim-lsp'
-  use 'hrsh7th/cmp-buffer'
-  use 'hrsh7th/nvim-cmp'
-  use 'saadparwaiz1/cmp_luasnip'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
