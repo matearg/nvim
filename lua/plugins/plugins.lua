@@ -51,6 +51,7 @@ return packer.startup(function(use)
   use 'nvim-lualine/lualine.nvim' -- Add a custom statusline
   use 'voldikss/vim-floaterm'   -- A floating terminal
   use 'lukas-reineke/indent-blankline.nvim' -- Indentation marks
+  use 'folke/which-key.nvim' -- Show keybindings in popup
 
   -- Colorschemes
   use 'navarasu/onedark.nvim' -- OneDark theme
