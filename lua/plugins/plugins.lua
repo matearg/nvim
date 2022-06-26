@@ -65,6 +65,8 @@ return packer.startup(function(use)
 
   -- Colorschemes
   use 'navarasu/onedark.nvim' -- OneDark theme
+  use 'sainnhe/gruvbox-material'
+  use 'LunarVim/darkplus.nvim'
   use 'tanvirtin/monokai.nvim'
 
   -- Cmp plugins
