@@ -44,6 +44,7 @@ return packer.startup(function(use)
   use 'wbthomason/packer.nvim' -- Have packer manage itself
   use 'nvim-lua/popup.nvim' -- An implementation of the Popup API from vim in Neovim
   use 'nvim-lua/plenary.nvim' -- Useful lua functions used ny lots of plugins
+  use 'lewis6991/impatient.nvim' -- Improve vim loading speeds
 
   -- Visuals
   use 'kyazdani42/nvim-web-devicons' -- Add web devicons to vim
@@ -59,6 +60,7 @@ return packer.startup(function(use)
   use 'tpope/vim-commentary'
   use 'goolord/alpha-nvim' -- Alpha is a dashboard-like plugin
   use 'norcalli/nvim-colorizer.lua' -- Colorize nvim
+  use 'windwp/nvim-autopairs' -- Autopairs, integrates with both cmp and treesitter
 
   -- Colorschemes
   use 'navarasu/onedark.nvim' -- OneDark theme
@@ -85,6 +87,7 @@ return packer.startup(function(use)
 
   -- Telescope
   use 'nvim-telescope/telescope.nvim'
+  use 'ahmedkhalf/project.nvim' -- Project management
 
   -- Git
   use 'lewis6991/gitsigns.nvim' -- git commit signs
