@@ -79,6 +79,7 @@ local opts = {
 }
 
 local mappings = {
+  ["a"] = { "<cmd>Alpha<cr>", "Main Page" },
   ["b"] = {
     "<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>",
     "Buffers",
@@ -93,7 +94,6 @@ local mappings = {
   },
   ["P"] = { "<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects" },
   ["t"] = { "<cmd>FloatermToggle<cr>", "Terminal" },
-  ["m"] = { "<cmd>Alpha<cr>", "Main Page" },
 
   -- a = {
   --   name = "Coc",
