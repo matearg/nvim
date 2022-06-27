@@ -95,11 +95,6 @@ local mappings = {
   ["P"] = { "<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects" },
   ["t"] = { "<cmd>FloatermToggle<cr>", "Terminal" },
 
-  -- a = {
-  --   name = "Coc",
-  --   c = "Coc code action"
-  -- },
-
   p = {
     name = "Packer",
     c = { "<cmd>PackerCompile<cr>", "Compile" },
@@ -111,6 +106,7 @@ local mappings = {
 
   g = {
     name = "Git",
+    g = { "<cmd>LazyGit<cr>", "LazyGit"},
     j = { "<cmd>lua require 'gitsigns'.next_hunk()<cr>", "Next Hunk" },
     k = { "<cmd>lua require 'gitsigns'.prev_hunk()<cr>", "Prev Hunk" },
     l = { "<cmd>lua require 'gitsigns'.blame_line()<cr>", "Blame" },

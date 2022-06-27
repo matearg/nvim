@@ -94,6 +94,7 @@ return packer.startup(function(use)
 
   -- Git
   use 'lewis6991/gitsigns.nvim' -- git commit signs
+  use 'kdheepak/lazygit.nvim'
 
   -- Lsp
   use 'neovim/nvim-lspconfig'
