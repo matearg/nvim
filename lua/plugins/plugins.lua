@@ -68,6 +68,7 @@ return packer.startup(function(use)
   use 'sainnhe/gruvbox-material'
   use 'LunarVim/darkplus.nvim'
   use 'tanvirtin/monokai.nvim'
+  use 'folke/tokyonight.nvim'
 
   -- Cmp plugins
   use 'hrsh7th/nvim-cmp'
