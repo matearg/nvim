@@ -67,6 +67,8 @@ return packer.startup(function(use)
   use 'navarasu/onedark.nvim'                       -- OneDark colorscheme
   use 'LunarVim/darkplus.nvim'                      -- VSCode-like colorscheme
   use 'folke/tokyonight.nvim'                       -- Tokyonight colorscheme
+  use 'rmehri01/onenord.nvim'                       -- OneDark + Nord = OneNord colorscheme
+  use 'JoosepAlviste/palenightfall.nvim'            -- Darker palenight colorscheme
 
   -- Cmp plugins
   use 'hrsh7th/nvim-cmp'                            -- The cmp compltetion plugin
