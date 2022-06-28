@@ -66,7 +66,6 @@ return packer.startup(function(use)
   -- Colorschemes
   use 'navarasu/onedark.nvim'                       -- OneDark colorscheme
   use 'LunarVim/darkplus.nvim'                      -- VSCode-like colorscheme
-  use 'tanvirtin/monokai.nvim'                      -- Monokai colorscheme
   use 'folke/tokyonight.nvim'                       -- Tokyonight colorscheme
 
   -- Cmp plugins
