@@ -83,25 +83,15 @@ ins_left {
   function()
     return '▊'
   end,
-  color = { fg = colors.blue }, -- Sets highlighting of component
-  padding = { left = 0, right = 1 }, -- We don't need space before this
-}
-
-ins_left {
-  -- mode component
-  function()
-    return ''
-  end,
   color = function()
-    -- auto change color according to neovims mode
     local mode_color = {
-      n = colors.red,
+      n = colors.blue,
       i = colors.green,
-      v = colors.blue,
-      [''] = colors.blue,
-      V = colors.blue,
+      v = colors.red,
+      [''] = colors.red,
+      V = colors.red,
       c = colors.magenta,
-      no = colors.red,
+      no = colors.blue,
       s = colors.orange,
       S = colors.orange,
       [''] = colors.orange,
@@ -118,6 +108,15 @@ ins_left {
     }
     return { fg = mode_color[vim.fn.mode()] }
   end,
+  padding = { left = 0, right = 1 }, -- We don't need space before this
+}
+
+ins_left {
+  -- mode component
+  function()
+    return ''
+  end,
+  color = { fg = colors.red }, -- Sets highlighting of component
   padding = { right = 1 },
 }
 
@@ -174,7 +173,7 @@ ins_left {
     return msg
   end,
   icon = ' LSP:',
-  color = { fg = '#ffffff', gui = 'bold' },
+  color = { fg = colors.fg, gui = 'bold' },
 }
 
 -- Add components to right sections
@@ -214,7 +213,31 @@ ins_right {
   function()
     return '▊'
   end,
-  color = { fg = colors.blue },
+  color = function()
+    local mode_color = {
+      n = colors.blue,
+      i = colors.green,
+      v = colors.red,
+      [''] = colors.red,
+      V = colors.red,
+      c = colors.magenta,
+      no = colors.blue,
+      s = colors.orange,
+      S = colors.orange,
+      [''] = colors.orange,
+      ic = colors.yellow,
+      R = colors.violet,
+      Rv = colors.violet,
+      cv = colors.red,
+      ce = colors.red,
+      r = colors.cyan,
+      rm = colors.cyan,
+      ['r?'] = colors.cyan,
+      ['!'] = colors.red,
+      t = colors.red,
+    }
+    return { fg = mode_color[vim.fn.mode()] }
+  end,
   padding = { left = 1 },
 }
 
