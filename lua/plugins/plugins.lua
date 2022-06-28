@@ -33,7 +33,7 @@ end
 packer.init {
   display = {
     open_fn = function()
-      return require("packer.util").float { border = "single" } -- Avalible none, single, double, shadow, rounded
+      return require("packer.util").float { border = "rounded" } -- Avalible none, single, double, shadow, rounded
     end,
   },
 }
@@ -41,65 +41,64 @@ packer.init {
 -- Install your plugins here
 return packer.startup(function(use)
   -- My plugins here
-  use 'wbthomason/packer.nvim' -- Have packer manage itself
-  use 'nvim-lua/popup.nvim' -- An implementation of the Popup API from vim in Neovim
-  use 'nvim-lua/plenary.nvim' -- Useful lua functions used ny lots of plugins
-  use 'lewis6991/impatient.nvim' -- Improve vim loading speeds
-  use "numToStr/Comment.nvim" -- Easily comment stuff
+  use 'wbthomason/packer.nvim'                      -- Have packer manage itself
+  use 'nvim-lua/popup.nvim'                         -- An implementation of the Popup API from vim in Neovim
+  use 'nvim-lua/plenary.nvim'                       -- Useful lua functions used in lots of plugins
+  use 'lewis6991/impatient.nvim'                    -- Improve vim loading speeds
+  use "numToStr/Comment.nvim"                       -- Easily comment stuff
 
   -- Visuals
-  use 'kyazdani42/nvim-web-devicons' -- Add web devicons to vim
-  use 'kyazdani42/nvim-tree.lua' -- Tree view
-  use {'akinsho/bufferline.nvim', tag = "v2.*"} -- Bufferline
-  use 'nvim-lualine/lualine.nvim' -- Add a custom statusline
-  use 'lukas-reineke/indent-blankline.nvim' -- Indentation marks
+  use 'kyazdani42/nvim-web-devicons'                -- Add nerdfont icons to vim
+  use 'kyazdani42/nvim-tree.lua'                    -- File tree view
+  use {'akinsho/bufferline.nvim', tag = "v2.*"}     -- Shows buffer as tabs
+  use 'nvim-lualine/lualine.nvim'                   -- Fully customizable statusline
+  use 'lukas-reineke/indent-blankline.nvim'         -- Indentation marks
 
   -- IDE Utils
-  use 'folke/which-key.nvim' -- Show keybindings in popup
-  use 'voldikss/vim-floaterm'   -- A floating terminal
-  use 'moll/vim-bbye' -- A simple way to close vim buffers
-  use 'tpope/vim-commentary'
-  use 'goolord/alpha-nvim' -- Alpha is a dashboard-like plugin
-  use 'norcalli/nvim-colorizer.lua' -- Colorize nvim
-  use 'windwp/nvim-autopairs' -- Autopairs, integrates with both cmp and treesitter
+  use 'folke/which-key.nvim'                        -- Show keybindings in popup
+  use 'voldikss/vim-floaterm'                       -- A floating terminal
+  use 'moll/vim-bbye'                               -- A simple way to close vim buffers
+  use 'tpope/vim-commentary'                        -- Comment with a keybinding
+  use 'goolord/alpha-nvim'                          -- Alpha is a dashboard-like plugin
+  use 'norcalli/nvim-colorizer.lua'                 -- Add css colors
+  use 'windwp/nvim-autopairs'                       -- Autopairs, integrates with both cmp and treesitter
 
   -- Colorschemes
-  use 'navarasu/onedark.nvim' -- OneDark theme
-  use 'sainnhe/gruvbox-material'
-  use 'LunarVim/darkplus.nvim'
-  use 'tanvirtin/monokai.nvim'
-  use 'folke/tokyonight.nvim'
+  use 'navarasu/onedark.nvim'                       -- OneDark colorscheme
+  use 'LunarVim/darkplus.nvim'                      -- VSCode-like colorscheme
+  use 'tanvirtin/monokai.nvim'                      -- Monokai colorscheme
+  use 'folke/tokyonight.nvim'                       -- Tokyonight colorscheme
 
   -- Cmp plugins
-  use 'hrsh7th/nvim-cmp'
-  use 'hrsh7th/cmp-buffer'
-  use 'hrsh7th/cmp-path'
-  use 'hrsh7th/cmp-cmdline'
-  use 'hrsh7th/cmp-nvim-lsp'
-  use 'saadparwaiz1/cmp_luasnip'
+  use 'hrsh7th/nvim-cmp'                            -- The cmp compltetion plugin
+  use 'hrsh7th/cmp-buffer'                          -- Use buffer-context completion
+  use 'hrsh7th/cmp-path'                            -- Use path-context completion
+  use 'hrsh7th/cmp-cmdline'                         -- Command conpletions
+  use 'hrsh7th/cmp-nvim-lsp'                        -- Uses LSP completion in cmp
+  use 'saadparwaiz1/cmp_luasnip'                    -- Integrates LuaSnip to cmp
 
   -- snippets
-  use 'L3MON4D3/LuaSnip' --snippet engine
-  use 'rafamadriz/friendly-snippets' -- a bunch of snippets to use
+  use 'L3MON4D3/LuaSnip'                            -- Snippet engine
+  use 'rafamadriz/friendly-snippets'                -- A bunch of snippets to use
 
   -- Treesitter
   use {
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate',
-  } -- treesitter plugin for syntax highlighting
+  }                                                 -- treesitter plugin for syntax highlighting
   use 'JoosepAlviste/nvim-ts-context-commentstring' -- context commentstring plugin
 
   -- Telescope
-  use 'nvim-telescope/telescope.nvim'
-  use 'ahmedkhalf/project.nvim' -- Project management
+  use 'nvim-telescope/telescope.nvim'               -- Fzf-like plugin
+  use 'ahmedkhalf/project.nvim'                     -- Project management for telescope
 
   -- Git
-  use 'lewis6991/gitsigns.nvim' -- git commit signs
-  use 'kdheepak/lazygit.nvim'
+  use 'lewis6991/gitsigns.nvim'                     -- Git hunk signs
+  use 'kdheepak/lazygit.nvim'                       -- Tui for git management
 
   -- Lsp
-  use 'neovim/nvim-lspconfig'
-  use 'williamboman/nvim-lsp-installer'
+  use 'neovim/nvim-lspconfig'                       -- LSP
+  use 'williamboman/nvim-lsp-installer'             -- An easy way to install language servers
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

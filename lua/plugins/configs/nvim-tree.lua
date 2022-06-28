@@ -78,10 +78,10 @@ nvim_tree.setup {
   renderer = {
     highlight_opened_files = "name",
     indent_markers = {
-      enable = false,
+      enable = true,
       icons = {
-	corner = "└ ", -- Avalible "└ ", "╰ ", "╚ "
-	edge = "│  ", -- Avalible "║ ", "│ "
+	corner = "╰ ", -- Avalible "└ ", "╰ "
+	edge = "│  ",
 	none = "  ",
       },
     },
