@@ -7,7 +7,7 @@ local lualine = require('lualine')
 -- stylua: ignore
 local colors = {
   -- bg       = '#1d202f',
-  bg = 'auto',
+  bg       = 'auto',
   fg       = '#bbc2cf',
   yellow   = '#ECBE7B',
   cyan     = '#008080',
@@ -188,7 +188,7 @@ ins_right {
 ins_right {
   'fileformat',
   fmt = string.upper,
-  icons_enabled = false, -- I think icons are cool but Eviline doesn't have them. sigh
+  icons_enabled = true, -- I think icons are cool but Eviline doesn't have them. sigh
   color = { fg = colors.green, gui = 'bold' },
 }
 
