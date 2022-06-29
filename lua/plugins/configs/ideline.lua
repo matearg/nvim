@@ -16,6 +16,11 @@ local diagnostics = {
   always_visible = true,
 }
 
+local branch = {
+    "branch",
+    icon = '',
+}
+
 local diff = {
   "diff",
   colored = false,
@@ -34,7 +39,7 @@ local time = {
 
 local location = {
   "location",
-  padding = 0,
+  padding = { left = 0, right = 1 },
 }
 
 local spaces = function()
@@ -53,7 +58,7 @@ lualine.setup {
   },
   sections = {
     lualine_a = { "" },
-    lualine_b = { diagnostics, "branch" },
+    lualine_b = { diagnostics, branch },
     lualine_c = { diff },
     lualine_x = { spaces },
     lualine_y = { time, "encoding", filetype },
