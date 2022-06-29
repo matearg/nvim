@@ -1,7 +1,7 @@
 vim.cmd [[
 try
   set termguicolors
-  colorscheme darkplus
+  colorscheme onenord
 catch /^Vim\%((\a\+)\)\=:E185/
   set background=dark
   set termguicolors
