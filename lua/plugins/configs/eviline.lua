@@ -109,7 +109,7 @@ ins_left {
       rm = colors.cyan,
       ['r?'] = colors.cyan,
       ['!'] = colors.red,
-      t = colors.red,
+      t = colors.cyan,
     }
     return { fg = mode_color[vim.fn.mode()] }
   end,
@@ -239,7 +239,7 @@ ins_right {
       rm = colors.cyan,
       ['r?'] = colors.cyan,
       ['!'] = colors.red,
-      t = colors.red,
+      t = colors.cyan,
     }
     return { fg = mode_color[vim.fn.mode()] }
   end,
