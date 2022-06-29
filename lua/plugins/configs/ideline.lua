@@ -28,9 +28,13 @@ local filetype = {
   icons_enabled = false,
 }
 
+local time = {
+    'os.date("%H:%M", os.time())',
+}
+
 local location = {
   "location",
-  padding = 0,
+  padding = 1,
 }
 
 local spaces = function()
@@ -48,14 +52,12 @@ lualine.setup {
     always_divide_middle = true,
   },
   sections = {
-    -- lualine_a = { "mode" },
     lualine_a = { "" },
-    lualine_b = { diagnostics, spaces },
-    lualine_c = { 'os.date("%H:%M", os.time())' },
-    lualine_x = { "branch" },
-    lualine_y = { diff, "encoding", filetype },
+    lualine_b = { diagnostics, "branch" },
+    lualine_c = { diff },
+    lualine_x = { spaces },
+    lualine_y = { time, "encoding", filetype },
     lualine_z = { location },
-    -- lualine_z = { "progress" },
   },
 }
 
