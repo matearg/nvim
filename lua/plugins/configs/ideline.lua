@@ -34,7 +34,7 @@ local time = {
 
 local location = {
   "location",
-  padding = 1,
+  padding = 0,
 }
 
 local spaces = function()
