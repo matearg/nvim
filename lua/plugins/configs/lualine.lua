@@ -9,6 +9,7 @@ lualine.setup {
     theme = 'auto',
     component_separators = { left = '', right = ''}, -- Avalible '', { left = '', right = ''}, { left = '', right = ''}, { left = '', right = ''}
     section_separators = { left = '', right = ''}, -- Avalible '', { left = '', right = ''}, { left = '', right = ''}, { left = '', right = ''}
+    disabled_filetypes = { "alpha", "dashboard" },
     globalstatus = true,
   },
   sections = {
