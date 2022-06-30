@@ -5,4 +5,4 @@ vim.g.floaterm_title = "Terminal"
 vim.g.floaterm_borderchars = "─│─│╭╮╯╰" -- Avalible "─│─│╭╮╯╰", "─│─│┌┐┘└"
 vim.g.floaterm_wintype = "split"        -- Avalible "float", "split", "vsplit"
 vim.g.floaterm_width = 0.9              -- Float = 0.9
-vim.g.floaterm_height = 0.4             -- Float = 0.9, Split = 0.5
+vim.g.floaterm_height = 0.3             -- Float = 0.9, Split = 0.5
