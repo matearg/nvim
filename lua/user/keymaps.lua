@@ -34,8 +34,6 @@ keymap("n", "<A-k>", ":m .-2<CR>==", opts)--
 -- Insert --
 -- Press jk fast to enter
 keymap("i", "jk", "<ESC>", opts)
-keymap("i", "kj", "<ESC>", opts)
-
 
 -- Visual --
 -- Move text up and down
