@@ -40,6 +40,8 @@ local options = {
   emoji = true,   -- Enable emojis
   lazyredraw = true,   -- Dont redraw the whole screen
   colorcolumn = "81",
+  termguicolors = true,
+  background = "dark",
 }
 
 for key, value in pairs(options) do
