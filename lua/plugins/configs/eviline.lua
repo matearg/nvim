@@ -6,12 +6,12 @@ local lualine = require('lualine')
 -- Color table for highlights
 -- stylua: ignore
 local colors = {
-  bg       = 'auto',    -- for transparent
-  -- bg       = '#222222', -- For darkplus
-  -- bg       = '#282c34', -- For onedark
-  -- bg       = '#3b4252', -- For onenord
-  -- bg       = '#232534', -- for palenightfall
-  -- bg       = '#1d202f', -- for tokyonight
+  bg       = 'auto',                 -- for transparent
+  -- bg       = '#222222',              -- For darkplus
+  -- bg       = '#282c34',              -- For onedark
+  -- bg       = '#3b4252',              -- For onenord
+  -- bg       = '#232534',              -- for palenightfall
+  -- bg       = '#1d202f',              -- for tokyonight
 
   fg       = '#bbc2cf',
   yellow   = '#ECBE7B',
@@ -114,7 +114,7 @@ ins_left {
     }
     return { fg = mode_color[vim.fn.mode()] }
   end,
-  padding = { left = 0, right = 1 }, -- We don't need space before this
+  padding = { left = 0, right = 1 },    -- We don't need space before this
 }
 
 ins_left {
@@ -122,7 +122,7 @@ ins_left {
   function()
     return ''
   end,
-  color = { fg = colors.red }, -- Sets highlighting of component
+  color = { fg = colors.red },          -- Sets highlighting of component
   padding = { right = 1 },
 }
 
@@ -184,8 +184,8 @@ ins_left {
 
 -- Add components to right sections
 ins_right {
-  'o:encoding', -- option component same as &encoding in viml
-  fmt = string.upper, -- I'm not sure why it's upper case either ;)
+  'o:encoding',                         -- option component same as &encoding in viml
+  fmt = string.upper,                   -- I'm not sure why it's upper case either ;)
   cond = conditions.hide_in_width,
   color = { fg = colors.green, gui = 'bold' },
 }
@@ -193,7 +193,7 @@ ins_right {
 ins_right {
   'fileformat',
   fmt = string.upper,
-  icons_enabled = true, -- I think icons are cool but Eviline doesn't have them. sigh
+  icons_enabled = true,                 -- I think icons are cool but Eviline doesn't have them. sigh
   color = { fg = colors.green, gui = 'bold' },
 }
 

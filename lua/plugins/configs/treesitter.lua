@@ -4,15 +4,15 @@ if not status_ok then
 end
 
 configs.setup {
-  ensure_installed = "all", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
-  sync_install = false, -- install languages synchronously (only applied to `ensure_installed`)
-  ignore_install = { "phpdoc" }, -- List of parsers to ignore installing
+  ensure_installed = "all",             -- One of "all", "maintained" (parsers with maintainers), or a list of languages
+  sync_install = false,                 -- Install languages synchronously (only applied to `ensure_installed`)
+  ignore_install = { "phpdoc" },        -- List of parsers to ignore installing
   autopairs = {
     enable = true,
   },
   highlight = {
-    enable = true, -- false will disable the whole extension
-    disable = { "toml", "markdown" }, -- list of language that will be disabled
+    enable = true,                      -- False will disable the whole extension
+    disable = { "toml", "markdown" },   -- List of language that will be disabled
     additional_vim_regex_highlighting = true,
   },
   context_commentstring = {
