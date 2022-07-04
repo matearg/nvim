@@ -29,9 +29,9 @@ vim.cmd [[
     autocmd User AlphaReady set showtabline=0 | autocmd BufUnload <buffer> set showtabline=2
   augroup end
 
-  augroup _remember_folds
-    autocmd!
-    autocmd BufWinLeave * mkview
-    autocmd BufWinEnter * silent! loadview
-  augroup end
+  " augroup _remember_folds
+  "   autocmd!
+  "   autocmd BufWinLeave * mkview
+  "   autocmd BufWinEnter * silent! loadview
+  " augroup end
 ]]
