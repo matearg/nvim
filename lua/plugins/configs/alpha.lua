@@ -86,7 +86,8 @@ dashboard.section.buttons.val = {
 }
 
 local function footer()
-	return "Written in Lua "
+    local message = "Written in Lua "
+	return message
 end
 
 dashboard.section.footer.val = footer()
