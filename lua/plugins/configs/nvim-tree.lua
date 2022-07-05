@@ -80,7 +80,7 @@ nvim_tree.setup {
     indent_markers = {
       enable = true,
       icons = {
-	corner = "╰ ", -- Avalible "└ ", "╰ "
+	corner = "└ ", -- Avalible "└ ", "╰ "
 	edge = "│  ",
 	none = "  ",
       },
@@ -134,7 +134,7 @@ nvim_tree.setup {
     },
     open_file = {
       quit_on_open = false,
-      resize_window = false,
+      resize_window = true,
       window_picker = {
         enable = true,
         chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890",
