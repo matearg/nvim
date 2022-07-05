@@ -7,14 +7,15 @@ lualine.setup {
   options = {
     icons_enabled = true,
     theme = 'auto',
-    component_separators = { left = '', right = ''},  -- Avalible '', { left = '', right = ''}, { left = '', right = ''}, { left = '', right = ''}
-    section_separators = { left = '', right = ''},    -- Avalible '', { left = '', right = ''}, { left = '', right = ''}, { left = '', right = ''}
+    component_separators = { left = '', right = ''},  -- Avalible '', { left = '', right = ''}, { left = '', right = ''}, { left = '', right = ''}
+    section_separators = { left = '', right = ''},    -- Avalible '', { left = '', right = ''}, { left = '', right = ''}, { left = '', right = ''}
     disabled_filetypes = { "alpha", "dashboard" },
     globalstatus = true,
   },
   sections = {
-    lualine_a = {'mode'},
-    lualine_b = {'branch',
+    -- lualine_a = {'mode'},
+    lualine_a = { { 'mode', fmt = function(str) return str:sub(1,1) end } },
+    lualine_b = { { 'branch', icon = '' },           -- Refeer https://www.nerdfonts.com/cheat-sheet
       {
       'diff',
       colored = true, -- Displays a colored diff status if set to true
