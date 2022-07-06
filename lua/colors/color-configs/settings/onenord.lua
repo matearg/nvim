@@ -1,5 +1,10 @@
+local status_ok, onenord = pcall(require, "onenord")
+if not status_ok then
+  return
+end
+
 -- OneNord
-require('onenord').setup({
+onenord.setup({
   theme = nil,              -- "dark" or "light". Alternatively, remove the option and set vim.o.background instead
   borders = true,           -- Split window borders
   fade_nc = false,          -- Fade non-current windows, making them more distinguishable
