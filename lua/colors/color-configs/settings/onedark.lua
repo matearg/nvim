@@ -5,7 +5,7 @@ end
 
 -- OneDark
 onedark.setup  {
-    style = 'cool',      -- Chose between 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer', 'light'
+    style = 'dark',      -- Chose between 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer', 'light'
     transparent = false,
     code_style = {
         comments = 'none',
