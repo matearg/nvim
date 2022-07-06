@@ -83,32 +83,32 @@ ins_left {
   function()
     return '▊'
   end,
-  -- color = function()
-  --   local mode_color = {
-  --     n = colors.blue,
-  --     i = colors.green,
-  --     v = colors.violet,
-  --     [''] = colors.violet,
-  --     V = colors.violet,
-  --     c = colors.magenta,
-  --     no = colors.blue,
-  --     s = colors.orange,
-  --     S = colors.orange,
-  --     [''] = colors.orange,
-  --     ic = colors.yellow,
-  --     R = colors.red,
-  --     Rv = colors.red,
-  --     cv = colors.red,
-  --     ce = colors.red,
-  --     r = colors.cyan,
-  --     rm = colors.cyan,
-  --     ['r?'] = colors.cyan,
-  --     ['!'] = colors.red,
-  --     t = colors.cyan,
-  --   }
-  --   return { fg = mode_color[vim.fn.mode()] }
-  -- end,
-  color = { fg = colors.blue },          -- Sets highlighting of component
+  color = function()
+    local mode_color = {
+      n = colors.blue,
+      i = colors.green,
+      v = colors.magenta,
+      [''] = colors.magenta,
+      V = colors.magenta,
+      c = colors.violet,
+      no = colors.blue,
+      s = colors.orange,
+      S = colors.orange,
+      [''] = colors.orange,
+      ic = colors.yellow,
+      R = colors.red,
+      Rv = colors.red,
+      cv = colors.red,
+      ce = colors.red,
+      r = colors.cyan,
+      rm = colors.cyan,
+      ['r?'] = colors.cyan,
+      ['!'] = colors.red,
+      t = colors.cyan,
+    }
+    return { fg = mode_color[vim.fn.mode()] }
+  end,
+  -- color = { fg = colors.blue },          -- Sets highlighting of component
   padding = { left = 0, right = 1 },    -- We don't need space before this
 }
 
@@ -117,32 +117,32 @@ ins_left {
   function()
     return ''
   end,
-  color = function()
-    local mode_color = {
-      n = colors.red,
-      i = colors.green,
-      v = colors.blue,
-      [''] = colors.blue,
-      V = colors.blue,
-      c = colors.magenta,
-      no = colors.red,
-      s = colors.orange,
-      S = colors.orange,
-      [''] = colors.orange,
-      ic = colors.yellow,
-      R = colors.violet,
-      Rv = colors.violet,
-      cv = colors.red,
-      ce = colors.red,
-      r = colors.cyan,
-      rm = colors.cyan,
-      ['r?'] = colors.cyan,
-      ['!'] = colors.red,
-      t = colors.red,
-    }
-    return { fg = mode_color[vim.fn.mode()] }
-  end,
-  -- color = { fg = colors.red },          -- Sets highlighting of component
+  -- color = function()
+  --   local mode_color = {
+  --     n = colors.red,
+  --     i = colors.green,
+  --     v = colors.blue,
+  --     [''] = colors.blue,
+  --     V = colors.blue,
+  --     c = colors.magenta,
+  --     no = colors.red,
+  --     s = colors.orange,
+  --     S = colors.orange,
+  --     [''] = colors.orange,
+  --     ic = colors.yellow,
+  --     R = colors.violet,
+  --     Rv = colors.violet,
+  --     cv = colors.red,
+  --     ce = colors.red,
+  --     r = colors.cyan,
+  --     rm = colors.cyan,
+  --     ['r?'] = colors.cyan,
+  --     ['!'] = colors.red,
+  --     t = colors.red,
+  --   }
+  --   return { fg = mode_color[vim.fn.mode()] }
+  -- end,
+  color = { fg = colors.red },          -- Sets highlighting of component
   padding = { right = 1 },
 }
 
@@ -240,32 +240,32 @@ ins_right {
   function()
     return '▊'
   end,
-  -- color = function()
-  --   local mode_color = {
-  --     n = colors.blue,
-  --     i = colors.green,
-  --     v = colors.violet,
-  --     [''] = colors.violet,
-  --     V = colors.violet,
-  --     c = colors.magenta,
-  --     no = colors.blue,
-  --     s = colors.orange,
-  --     S = colors.orange,
-  --     [''] = colors.orange,
-  --     ic = colors.yellow,
-  --     R = colors.red,
-  --     Rv = colors.red,
-  --     cv = colors.red,
-  --     ce = colors.red,
-  --     r = colors.cyan,
-  --     rm = colors.cyan,
-  --     ['r?'] = colors.cyan,
-  --     ['!'] = colors.red,
-  --     t = colors.cyan,
-  --   }
-  --   return { fg = mode_color[vim.fn.mode()] }
-  -- end,
-  color = { fg = colors.blue },          -- Sets highlighting of component
+  color = function()
+    local mode_color = {
+      n = colors.blue,
+      i = colors.green,
+      v = colors.magenta,
+      [''] = colors.magenta,
+      V = colors.magenta,
+      c = colors.violet,
+      no = colors.blue,
+      s = colors.orange,
+      S = colors.orange,
+      [''] = colors.orange,
+      ic = colors.yellow,
+      R = colors.red,
+      Rv = colors.red,
+      cv = colors.red,
+      ce = colors.red,
+      r = colors.cyan,
+      rm = colors.cyan,
+      ['r?'] = colors.cyan,
+      ['!'] = colors.red,
+      t = colors.cyan,
+    }
+    return { fg = mode_color[vim.fn.mode()] }
+  end,
+  -- color = { fg = colors.blue },          -- Sets highlighting of component
   padding = { left = 1 },
 }
 
