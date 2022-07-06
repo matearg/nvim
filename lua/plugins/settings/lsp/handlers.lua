@@ -5,8 +5,8 @@ M.setup = function()
   local signs = {
     { name = "DiagnosticSignError", text = "" },
     { name = "DiagnosticSignWarn", text = "" },
-    { name = "DiagnosticSignHint", text = "" }, -- avalible "", ""
-    { name = "DiagnosticSignInfo", text = "" }, --avalible "", ""
+    { name = "DiagnosticSignHint", text = "" },
+    { name = "DiagnosticSignInfo", text = "" },
   }
 
   for _, sign in ipairs(signs) do

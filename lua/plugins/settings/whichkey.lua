@@ -94,6 +94,7 @@ local mappings = {
   },
   ["P"] = { "<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects" },
   ["t"] = { "<cmd>FloatermToggle<cr>", "Terminal" },
+  ["T"] = { "<cmd>TransparentToggle<cr>", "Toggle Transparency" },
 
   p = {
     name = "Packer",

@@ -1,6 +1,6 @@
 vim.cmd [[
 try
-  colorscheme onenord
+  colorscheme zephyr
 catch /^Vim\%((\a\+)\)\=:E185/
   colorscheme default
 endtry

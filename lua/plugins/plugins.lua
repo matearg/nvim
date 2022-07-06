@@ -53,6 +53,7 @@ return packer.startup(function(use)
   use {'akinsho/bufferline.nvim', tag = "v2.*"}     -- Shows buffer as tabs
   use 'nvim-lualine/lualine.nvim'                   -- Fully customizable statusline
   use 'lukas-reineke/indent-blankline.nvim'         -- Indentation marks
+  use 'xiyaowong/nvim-transparent'                  -- Toggle transparency in neovim
 
   -- IDE Utils
   use 'folke/which-key.nvim'                        -- Show keybindings in popup
@@ -68,7 +69,10 @@ return packer.startup(function(use)
   use 'LunarVim/darkplus.nvim'                      -- VSCode-like colorscheme
   use 'folke/tokyonight.nvim'                       -- Tokyonight colorscheme
   use 'rmehri01/onenord.nvim'                       -- OneDark + Nord = OneNord colorscheme
-  use 'JoosepAlviste/palenightfall.nvim'            -- Darker palenight colorscheme
+  use 'shaunsingh/moonlight.nvim'
+  use 'glepnir/zephyr-nvim'
+  use 'shaunsingh/nord.nvim'
+  use 'Mofiqul/dracula.nvim'
 
   -- Cmp plugins
   use 'hrsh7th/nvim-cmp'                            -- The cmp compltetion plugin

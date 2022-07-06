@@ -6,13 +6,7 @@ local lualine = require('lualine')
 -- Color table for highlights
 -- stylua: ignore
 local colors = {
-  -- bg       = 'auto',                 -- for transparent
-  -- bg       = '#222222',              -- For darkplus
-  -- bg       = '#282c34',              -- For onedark
-  bg       = '#3b4252',              -- For onenord
-  -- bg       = '#232534',              -- for palenightfall
-  -- bg       = '#1d202f',              -- for tokyonight
-
+  bg       = 'auto',                 -- for transparent
   fg       = '#bbc2cf',
   yellow   = '#ECBE7B',
   cyan     = '#008080',
@@ -171,11 +165,12 @@ ins_left { 'location' }
 ins_left {
   'diagnostics',
   sources = { 'nvim_diagnostic' },
-  symbols = { error = ' ', warn = ' ', info = ' ' },
+  symbols = { error = ' ', warn = ' ', info = ' ', hint = ' ' },
   diagnostics_color = {
     color_error = { fg = colors.red },
     color_warn = { fg = colors.yellow },
-    color_info = { fg = colors.cyan },
+    color_info = { fg = colors.magenta },
+    color_hint = { fg = colors.cyan },
   },
 }
 
@@ -205,7 +200,7 @@ ins_left {
     return msg
   end,
   icon = ' LSP:',
-  color = { fg = colors.fg, gui = 'bold' },
+  color = { fg = colors.cyan, gui = 'bold' },
 }
 
 -- Add components to right sections
