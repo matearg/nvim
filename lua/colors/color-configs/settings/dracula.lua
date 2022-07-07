@@ -28,4 +28,4 @@ vim.g.dracula_show_end_of_buffer = false
 -- use transparent background
 vim.g.dracula_transparent_bg = false
 -- set italic comment
-vim.g.dracula_italic_comment = false
+vim.g.dracula_italic_comment = true

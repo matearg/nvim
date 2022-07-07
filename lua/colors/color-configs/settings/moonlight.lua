@@ -1,5 +1,5 @@
 -- Moonlight
-vim.g.moonlight_italic_comments = false
+vim.g.moonlight_italic_comments = true
 vim.g.moonlight_italic_keywords = false
 vim.g.moonlight_italic_functions = false
 vim.g.moonlight_italic_variables = false

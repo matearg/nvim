@@ -8,10 +8,10 @@ onedark.setup  {
     style = 'dark',      -- Chose between 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer', 'light'
     transparent = false,
     code_style = {
-        comments = 'none',
+        comments = 'italic',
         keywords = 'none',
-        functions = 'none',
-        strings = 'none',
+        functions = 'bold',
+        strings = 'italic',
         variables = 'none'
     },
     diagnostics = {

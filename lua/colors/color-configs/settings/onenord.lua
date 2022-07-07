@@ -10,10 +10,10 @@ onenord.setup({
   fade_nc = false,          -- Fade non-current windows, making them more distinguishable
   -- Style that is applied to various groups: see `highlight-args` for options
   styles = {
-    comments = "NONE",
-    strings = "NONE",
+    comments = "italic",
+    strings = "italic",
     keywords = "NONE",
-    functions = "NONE",
+    functions = "bold",
     variables = "NONE",
     diagnostics = "underline",
   },
