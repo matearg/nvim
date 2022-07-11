@@ -81,6 +81,7 @@ return packer.startup(function(use)
   use 'hrsh7th/cmp-path'                            -- Use path-context completion
   use 'hrsh7th/cmp-cmdline'                         -- Command conpletions
   use 'hrsh7th/cmp-nvim-lsp'                        -- Uses LSP completion in cmp
+  use 'hrsh7th/cmp-nvim-lua'                        -- Copletios for nvim lua API
   use 'saadparwaiz1/cmp_luasnip'                    -- Integrates LuaSnip to cmp
 
   -- snippets
