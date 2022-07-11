@@ -90,6 +90,7 @@ return packer.startup(function(use)
   -- Treesitter
   use 'nvim-treesitter/nvim-treesitter'             -- treesitter plugin for syntax highlighting
   use 'JoosepAlviste/nvim-ts-context-commentstring' -- context commentstring plugin
+  use 'p00f/nvim-ts-rainbow'                        -- Colorize bracket pairs with TS
 
   -- Telescope
   use 'nvim-telescope/telescope.nvim'               -- Fzf-like plugin
