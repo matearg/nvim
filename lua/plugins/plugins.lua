@@ -33,7 +33,7 @@ end
 packer.init {
   display = {
     open_fn = function()
-      return require("packer.util").float { border = "rounded" } -- Avalible none, single, double, shadow, rounded
+      return require("packer.util").float { border = "none" } -- Avalible none, single, double, shadow, rounded
     end,
   },
 }
@@ -68,9 +68,9 @@ return packer.startup(function(use)
   use 'LunarVim/darkplus.nvim'                      -- VSCode-like colorscheme
   use 'folke/tokyonight.nvim'                       -- Tokyonight colorscheme
   use 'rmehri01/onenord.nvim'                       -- OneDark + Nord = OneNord colorscheme
-  use 'shaunsingh/moonlight.nvim'                   -- Darkblue based theme
+  -- use 'shaunsingh/moonlight.nvim'                   -- Darkblue based theme
   use 'glepnir/zephyr-nvim'                         -- Warm colorscheme
-  use 'shaunsingh/nord.nvim'                        -- You alredy know nord
+  -- use 'shaunsingh/nord.nvim'                        -- You alredy know nord
   use 'Mofiqul/dracula.nvim'                        -- It'll bite you
   use { 'luisiacc/gruvbox-baby', branch = 'main' }  -- Gruvbox based theme
   use "rebelot/kanagawa.nvim"                       -- Almost kawabonga
