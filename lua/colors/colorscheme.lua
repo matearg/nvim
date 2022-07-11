@@ -1,6 +1,6 @@
 vim.cmd [[
 try
-  colorscheme onedark
+  colorscheme tokyonight
 catch /^Vim\%((\a\+)\)\=:E185/
   colorscheme default
 endtry
