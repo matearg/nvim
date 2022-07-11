@@ -61,16 +61,17 @@ lualine.setup {
     lualine_b = { diagnostics, branch },
     lualine_c = { diff },
     lualine_x = { spaces },
-    lualine_y = { time, "encoding", filetype },
+    -- lualine_y = { time, "encoding", filetype },
+    lualine_y = { "encoding", filetype },
     lualine_z = { location },
   },
 }
 
 -- Trigger rerender of status line every second for clock
-if _G.Statusline_timer == nil then
-    _G.Statusline_timer = vim.loop.new_timer()
-else
-    _G.Statusline_timer:stop()
-end
-_G.Statusline_timer:start(0, 1000, vim.schedule_wrap(
-                              function() vim.api.nvim_command('redrawstatus') end))
+-- if _G.Statusline_timer == nil then
+--     _G.Statusline_timer = vim.loop.new_timer()
+-- else
+--     _G.Statusline_timer:stop()
+-- end
+-- _G.Statusline_timer:start(0, 1000, vim.schedule_wrap(
+--                               function() vim.api.nvim_command('redrawstatus') end))
