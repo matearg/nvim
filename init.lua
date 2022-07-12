@@ -1,7 +1,7 @@
 require "user.settings"
 require "user.keymaps"
-require "user.autocomands"
 require "plugins.plugins"
+require "user.autocomands"
 require "colors.color-configs"
 require "colors.colorscheme"
 require "plugins.settings.impatient"
