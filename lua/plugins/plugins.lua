@@ -78,10 +78,7 @@ return packer.startup(function(use)
   use 'nvim-telescope/telescope.nvim' -- telescope plugin for fuzzy find
 
   -- Treesitter
-  use {
-    'nvim-treesitter/nvim-treesitter',
-    run = ':TSUpdate',
-  } -- treesitter plugin for syntax highlighting
+  use 'nvim-treesitter/nvim-treesitter' -- treesitter plugin for syntax highlighting
   use 'JoosepAlviste/nvim-ts-context-commentstring' -- context commentstring plugin
 
   -- Git
