@@ -105,6 +105,7 @@ local mappings = {
     r = { '<cmd>lua require("plugins.settings.functions").toggle_option("relativenumber")<cr>', "Relative" },
     l = { '<cmd>lua require("plugins.settings.functions").toggle_option("cursorline")<cr>', "Cursorline" },
     t = { '<cmd>lua require("plugins.settings.functions").toggle_tabline()<cr>', "Tabline" },
+    c = { '<cmd>lua require("plugins.settings.functions").toggle_colorcolumn()<cr>', "ColorColumn" },
     s = { '<cmd>:e ~/AppData/Local/nvim/init.lua<cr>', "Settings" },
   },
 
