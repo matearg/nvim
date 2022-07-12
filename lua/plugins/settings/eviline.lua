@@ -6,17 +6,18 @@ local lualine = require('lualine')
 -- Color table for highlights
 -- stylua: ignore
 local colors = {
-  bg       = 'auto',                 -- for transparent
-  fg       = '#bbc2cf',
-  yellow   = '#ECBE7B',
-  cyan     = '#008080',
-  darkblue = '#081633',
-  green    = '#98be65',
-  orange   = '#FF8800',
-  violet   = '#a9a1e1',
-  magenta  = '#c678dd',
-  blue     = '#51afef',
-  red      = '#ec5f67',
+  bg        = 'auto',                -- for transparent
+  fg        = '#bbc2cf',
+  yellow    = '#ECBE7B',
+  cyan      = '#008080',
+  lightcyan = '#307c60',
+  darkblue  = '#081633',
+  green     = '#98be65',
+  orange    = '#FF8800',
+  violet    = '#a9a1e1',
+  magenta   = '#c678dd',
+  blue      = '#51afef',
+  red       = '#ec5f67',
 }
 
 local conditions = {
@@ -146,11 +147,11 @@ ins_left {
   padding = { right = 1 },
 }
 
-ins_left {
-  -- filesize component
-  'filesize',
-  cond = conditions.buffer_not_empty,
-}
+-- ins_left {
+--   -- filesize component
+--   'filesize',
+--   cond = conditions.buffer_not_empty,
+-- }
 
 ins_left {
   'filename',
@@ -158,9 +159,18 @@ ins_left {
   color = { fg = colors.magenta, gui = 'bold' },
 }
 
-ins_left { 'location' }
+ins_left { 'location', color = { fg = colors.fg, gui = 'none' }, padding = { left = 1, right = 1 } }
 
--- ins_left { 'progress', color = { fg = colors.fg, gui = 'bold' } }
+-- ins_left { 'progress', color = { fg = colors.fg, gui = 'bold' }, padding = { left = 0, right = 1 } }
+
+ins_left {
+  function()
+    local spaces = vim.api.nvim_buf_get_option(0, "shiftwidth")
+    return "spaces: " .. spaces
+  end,
+  color = { fg = colors.fg, gui = 'bold' },
+  padding = { left = 1, right = 1 },
+}
 
 ins_left {
   'diagnostics',
@@ -200,7 +210,7 @@ ins_left {
     return msg
   end,
   icon = ' LSP:',
-  color = { fg = colors.fg, gui = 'bold' },
+  color = { fg = colors.lightcyan, gui = 'bold' },
 }
 
 -- Add components to right sections
