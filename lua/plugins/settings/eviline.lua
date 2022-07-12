@@ -118,40 +118,40 @@ ins_left {
   function()
     return ''
   end,
-  -- color = function()
-  --   local mode_color = {
-  --     n = colors.red,
-  --     i = colors.green,
-  --     v = colors.blue,
-  --     [''] = colors.blue,
-  --     V = colors.blue,
-  --     c = colors.magenta,
-  --     no = colors.red,
-  --     s = colors.orange,
-  --     S = colors.orange,
-  --     [''] = colors.orange,
-  --     ic = colors.yellow,
-  --     R = colors.violet,
-  --     Rv = colors.violet,
-  --     cv = colors.red,
-  --     ce = colors.red,
-  --     r = colors.cyan,
-  --     rm = colors.cyan,
-  --     ['r?'] = colors.cyan,
-  --     ['!'] = colors.red,
-  --     t = colors.red,
-  --   }
-  --   return { fg = mode_color[vim.fn.mode()] }
-  -- end,
+  --[[ color = function()
+    local mode_color = {
+      n = colors.red,
+      i = colors.green,
+      v = colors.blue,
+      [''] = colors.blue,
+      V = colors.blue,
+      c = colors.magenta,
+      no = colors.red,
+      s = colors.orange,
+      S = colors.orange,
+      [''] = colors.orange,
+      ic = colors.yellow,
+      R = colors.violet,
+      Rv = colors.violet,
+      cv = colors.red,
+      ce = colors.red,
+      r = colors.cyan,
+      rm = colors.cyan,
+      ['r?'] = colors.cyan,
+      ['!'] = colors.red,
+      t = colors.red,
+    }
+    return { fg = mode_color[vim.fn.mode()] }
+  end, ]]
   color = { fg = colors.red },          -- Sets highlighting of component
   padding = { right = 1 },
 }
 
--- ins_left {
---   -- filesize component
---   'filesize',
---   cond = conditions.buffer_not_empty,
--- }
+--[[ ins_left {
+  -- filesize component
+  'filesize',
+  cond = conditions.buffer_not_empty,
+} ]]
 
 ins_left {
   'filename',

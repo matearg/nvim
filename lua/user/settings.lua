@@ -39,7 +39,7 @@ local options = {
   splitbelow = true,            -- Split buffers below
   emoji = true,                 -- Enable emojis
   lazyredraw = true,            -- Dont redraw the whole screen
-  colorcolumn = "81",           -- Write better code
+  colorcolumn = "0",            -- Write better code
   termguicolors = true,         -- Use 256 color palette
   background = "dark",          -- Set dark colorschemes
 }
