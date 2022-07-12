@@ -9,6 +9,9 @@ local options = {
   showcmd = true,               -- Show command in status line
   ruler = true,                 -- Show a ruler
   encoding = "utf-8",           -- Set encoding
+  fileencoding = "utf-8",
+  conceallevel = 0,
+  completeopt = { "menuone", "noselect" },
   showmatch = true,             -- Show matching brackets
   shiftwidth = 4,               -- Set shiftwidth to 4
   tabstop = 4,                  -- Set tabstop to 4
@@ -23,13 +26,13 @@ local options = {
   wrap = false,                 -- Disable wrapping
   cursorline = true,            -- Highlight current line
   cmdheight = 2,                -- More spce for messages
+  pumheight = 10,
   signcolumn = "auto:9",        -- Show signs in the right side of the screen
   hidden = true,                -- Hide buffers but let them open
   backup = false,               -- Disable backup files
   swapfile = false,             -- Disable swapfile
   writebackup = false,          -- Disable writebackup
   updatetime = 50,              -- Set update time to 50
-  shortmess = "c",              -- Show messages in the status line
   compatible = false,           -- Disable vim compatibility
   hlsearch = false,             -- Dont highlight matches
   incsearch = true,             -- Incremental searching
@@ -49,3 +52,5 @@ for key, value in pairs(options) do
 end
 
 vim.opt.iskeyword:append "-"    -- This-is-one-word
+vim.opt.shortmess:append "c"
+vim.opt.whichwrap:append("<,>,[,],h,l")

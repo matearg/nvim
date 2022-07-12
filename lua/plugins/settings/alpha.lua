@@ -78,28 +78,20 @@ dashboard.section.header.val = {
   -- [[                                                    ]],
 }
 
-local header = {
-   type = "text",
-   val = ascii,
-   opts = {
-      position = "center",
-      hl = "AlphaHeader",
-   },
-}
-
 dashboard.section.buttons.val = {
 	dashboard.button("f", "  Find file", ":Telescope find_files <CR>"),
 	dashboard.button("e", "  New file", ":ene <BAR> startinsert <CR>"),
 	dashboard.button("p", "  Find project", ":Telescope projects <CR>"),
 	dashboard.button("r", "  Recently used files", ":Telescope oldfiles <CR>"),
-	dashboard.button("t", "  Find text", ":Telescope live_grep <CR>"),
+	-- dashboard.button("t", "  Find text", ":Telescope live_grep <CR>"),
+  dashboard.button("t", " " .. " Find text", ":Telescope live_grep <CR>"),
 	dashboard.button("c", "  Configuration", ":e ~/AppData/Local/nvim/init.lua <CR>"),
-	dashboard.button("q", "  Quit Neovim", ":qa<CR>"),
+	-- dashboard.button("q", "  Quit Neovim", ":qa<CR>"),
+  dashboard.button("q", " " .. " Quit", ":qa<CR>"),
 }
 
 local function footer()
-    local message = "Written in Lua "
-	return message
+	return "Written in Lua "
 end
 
 dashboard.section.footer.val = footer()

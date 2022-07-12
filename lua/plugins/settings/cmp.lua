@@ -16,7 +16,7 @@ local check_backspace = function()
 end
 
 --   פּ ﯟ   some other good icons
-local kind_icons = {
+--[[ local kind_icons = {
   Text = "",
   Method = "m",
   Function = "",
@@ -42,6 +42,34 @@ local kind_icons = {
   Event = "",
   Operator = "",
   TypeParameter = "",
+} ]]
+
+local kind_icons = {
+	Text = "",
+	Method = "",
+	Function = "",
+	Constructor = "",
+	Field = "",
+	Variable = "",
+	Class = "",
+	Interface = "",
+	Module = "",
+	Property = "",
+	Unit = "",
+	Value = "",
+	Enum = "",
+	Keyword = "",
+	Snippet = "",
+	Color = "",
+	File = "",
+	Reference = "",
+	Folder = "",
+	EnumMember = "",
+	Constant = "",
+	Struct = "",
+	Event = "",
+	Operator = "",
+	TypeParameter = "",
 }
 -- find more here: https://www.nerdfonts.com/cheat-sheet
 
@@ -128,7 +156,7 @@ cmp.setup {
     completion = cmp.config.window.bordered(),
   },
   experimental = {
-    ghost_text = false,
+    ghost_text = true,
     native_menu = false,
   },
 }

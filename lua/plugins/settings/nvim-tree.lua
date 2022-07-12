@@ -32,7 +32,7 @@ nvim_tree.setup {
     enable = true,
     show_on_dirs = true,
     icons = {
-      hint = "",
+      hint = "",
       info = "",
       warning = "",
       error = "",
@@ -41,11 +41,6 @@ nvim_tree.setup {
   update_focused_file = {
     enable = true,
     update_cwd = true,
-    ignore_list = {},
-  },
-  system_open = {
-    cmd = nil,
-    args = {},
   },
   filters = {
     dotfiles = false,
@@ -69,7 +64,6 @@ nvim_tree.setup {
         { key = { "l", "<CR>", "o" }, cb = tree_cb "edit" },
         { key = "h", cb = tree_cb "close_node" },
         { key = "v", cb = tree_cb "vsplit" },
-	{ key = "t", cb = tree_cb "tabnew" },
       },
     },
     number = false,
@@ -80,11 +74,12 @@ nvim_tree.setup {
     indent_markers = {
       enable = false,
       icons = {
-	corner = "└ ", -- Avalible "└ ", "╰ "
-	edge = "│  ",
-	none = "  ",
+	      corner = "└ ", -- Avalible "└ ", "╰ "
+	      edge = "│  ",
+	      none = "  ",
       },
     },
+    root_folder_modifier = ":t",
     icons = {
       webdev_colors = true,
       git_placement = "before",
@@ -110,11 +105,18 @@ nvim_tree.setup {
           symlink_open = "",
       },
         git = {
-          unstaged = "✗",
+          --[[ unstaged = "✗",
           staged = "✓",
           unmerged = "",
           renamed = "➜",
           untracked = "★",
+          deleted = "",
+          ignored = "◌", ]]
+          unstaged = "",
+          staged = "S",
+          unmerged = "",
+          renamed = "➜",
+          untracked = "U",
           deleted = "",
           ignored = "◌",
         },
