@@ -1,7 +1,6 @@
-vim.cmd [[
-try
-  colorscheme onedark
-catch /^Vim\%((\a\+)\)\=:E185/
-  colorscheme default
-endtry
-]]
+local colorscheme = "onedark"
+
+local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
+if not status_ok then
+  return
+end
