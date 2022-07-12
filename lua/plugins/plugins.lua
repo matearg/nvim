@@ -53,6 +53,8 @@ return packer.startup(function(use)
   use {'akinsho/bufferline.nvim', tag = "v2.*"}     -- Shows buffer as tabs
   use 'nvim-lualine/lualine.nvim'                   -- Fully customizable statusline
   use 'lukas-reineke/indent-blankline.nvim'         -- Indentation marks
+  use 'fgheng/winbar.nvim'
+  use { "christianchiarulli/nvim-gps", branch = "text_hl" }
 
   -- IDE Utils
   use 'folke/which-key.nvim'                        -- Show keybindings in popup

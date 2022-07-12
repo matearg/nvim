@@ -88,11 +88,6 @@ local mappings = {
   ["w"] = { "<cmd>w<CR>", "Save" },
   ["q"] = { "<cmd>q<CR>", "Quit" },
   ["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
-  ["f"] = {
-    "<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
-    "Find files",
-  },
-  ["P"] = { "<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects" },
   ["t"] = { "<cmd>FloatermToggle<cr>", "Terminal" },
 
   p = {
@@ -102,6 +97,15 @@ local mappings = {
     s = { "<cmd>PackerSync<cr>", "Sync" },
     S = { "<cmd>PackerStatus<cr>", "Status" },
     u = { "<cmd>PackerUpdate<cr>", "Update" },
+  },
+
+  o = {
+    name = "Options",
+    w = { '<cmd>lua require("plugins.settings.functions").toggle_option("wrap")<cr>', "Wrap" },
+    r = { '<cmd>lua require("plugins.settings.functions").toggle_option("relativenumber")<cr>', "Relative" },
+    l = { '<cmd>lua require("plugins.settings.functions").toggle_option("cursorline")<cr>', "Cursorline" },
+    t = { '<cmd>lua require("plugins.settings.functions").toggle_tabline()<cr>', "Tabline" },
+    s = { '<cmd>:e ~/AppData/Local/nvim/init.lua<cr>', "Settings" },
   },
 
   g = {
@@ -159,10 +163,21 @@ local mappings = {
   },
 
   s = {
-    name = "Search",
+    name = "Split",
+    s = { "<cmd>split<cr>", "HSplit" },
+    v = { "<cmd>vsplit<cr>", "VSplit" },
+  },
+
+  f = {
+    name = "Find",
     b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
     c = { "<cmd>Telescope colorscheme<cr>", "Colorscheme" },
+    f = {
+      "<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
+      "Find files",
+    },
     h = { "<cmd>Telescope help_tags<cr>", "Find Help" },
+    P = { "<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects" },
     r = { "<cmd>Telescope oldfiles<cr>", "Open Recent File" },
     R = { "<cmd>Telescope registers<cr>", "Registers" },
     t = { "<cmd>Telescope current_buffer_fuzzy_find<cr>", "Text" },
