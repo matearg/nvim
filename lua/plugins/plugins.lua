@@ -86,7 +86,7 @@ return packer.startup(function(use)
   use 'hrsh7th/cmp-nvim-lua'                        -- Copletios for nvim lua API
   use 'saadparwaiz1/cmp_luasnip'                    -- Integrates LuaSnip to cmp
 
-  -- snippets
+  -- Snippets
   use 'L3MON4D3/LuaSnip'                            -- Snippet engine
   use 'rafamadriz/friendly-snippets'                -- A bunch of snippets to use
 
@@ -106,6 +106,7 @@ return packer.startup(function(use)
   -- Lsp
   use 'neovim/nvim-lspconfig'                       -- LSP
   use 'williamboman/nvim-lsp-installer'             -- An easy way to install language servers
+  use 'folke/lsp-colors.nvim'                       -- Creates missing LSP diagnostics highlight
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
