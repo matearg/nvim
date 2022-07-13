@@ -4,17 +4,40 @@ if not status_ok then
 end
 
 local servers = {
+  "clangd",
+  "html",
+  "jsonls",
+  "powershell_es",
+  "pyright",
+  "rust_analyzer",
   "sumneko_lua",
   "tsserver",
-  "pyright",
-  "jsonls",
   "yamlls",
-  -- "clangd",
-  "powershell_es",
   "vimls",
 }
 
-lsp_installer.setup()
+lsp_installer.setup {
+  ensure_installed = { "clangd", "html", "jsonls", "powershell_es", "pyright", "rust_analyzer", "sumneko_lua", "tsserver", "yamlls", "vimls" },
+
+  ui = {
+    -- Whether to automatically check for outdated servers when opening the UI window.
+    check_outdated_servers_on_open = true,
+
+    -- The border to use for the UI window. Accepts same border values as |nvim_open_win()|.
+    border = "rounded",
+
+    icons = {
+      -- The list icon to use for installed servers.
+      server_installed = "◍",
+      -- The list icon to use for servers that are pending installation.
+      server_pending = "◍",
+      -- The list icon to use for servers that are not installed.
+      server_uninstalled = "◍",
+    },
+  },
+}
+
+-- lsp_installer.setup()
 
 local lspconfig_status_ok, lspconfig = pcall(require, "lspconfig")
 if not lspconfig_status_ok then
