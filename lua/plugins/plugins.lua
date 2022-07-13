@@ -73,8 +73,8 @@ return packer.startup(function(use)
   use 'glepnir/zephyr-nvim'                         -- Warm colorscheme
   use 'Mofiqul/dracula.nvim'                        -- It'll bite you
   use { 'luisiacc/gruvbox-baby', branch = 'main' }  -- Gruvbox based theme
-  use "rebelot/kanagawa.nvim"                       -- Almost kawabonga
-  use "lunarvim/colorschemes"                       -- A bunch of colorschemes you can try out
+  use 'rebelot/kanagawa.nvim'                       -- Almost kawabonga
+  use 'lunarvim/colorschemes'                       -- A bunch of colorschemes you can try out
 
 
   -- Cmp plugins

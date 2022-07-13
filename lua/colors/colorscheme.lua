@@ -1,4 +1,4 @@
-local colorscheme = "dracula"
+local colorscheme = "aurora"
 --[[ aurora, codemonkey, darkplus, dracula, ferrum, gruvbox-baby,
 kanagawa, lunar, onedark, onedarker, onedarkest, onenord, spacedark,
 system76, tokyonight, zephyr ]]
