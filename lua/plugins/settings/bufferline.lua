@@ -5,14 +5,13 @@ end
 
 bufferline.setup {
   options = {
-    numbers = "none",                               -- | "ordinal" | "buffer_id" | "both" | function({ ordinal, id, lower, raise }): string,
+    numbers = function(opts)
+      return string.format('%s', opts.raise(opts.ordinal))
+    end,
     close_command = "Bdelete! %d",                  -- can be a string | function, see "Mouse actions"
     right_mouse_command = "vertical sbuffer %d",    -- can be a string | function, see "Mouse actions"
     left_mouse_command = "buffer %d",               -- can be a string | function, see "Mouse actions"
     middle_mouse_command = "Bdelete! %d",           -- can be a string | function, see "Mouse actions"
-    -- NOTE: this plugin is designed with this icon in mind,
-    -- and so changing this is NOT recommended, this is intended
-    -- as an escape hatch for people who cannot bear it for whatever reason
     indicator_icon = "▎",
     buffer_close_icon = "",
     modified_icon = "●",
@@ -24,7 +23,7 @@ bufferline.setup {
     tab_size = 21,
     diagnostics = "nvim_lsp",                       -- | "nvim_lsp" | "coc",
     diagnostics_update_in_insert = true,
-    offsets = { { filetype = "NvimTree", text = "", padding = 1 } },
+    offsets = { { filetype = "NvimTree", text = "Files", padding = 1 } },
     show_buffer_icons = true,
     show_buffer_close_icons = true,
     show_close_icon = false,
@@ -114,3 +113,5 @@ bufferline.setup {
     },
   },
 }
+
+vim.opt.showtabline = 0
