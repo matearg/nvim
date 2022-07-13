@@ -50,11 +50,11 @@ return packer.startup(function(use)
   -- Visuals
   use 'kyazdani42/nvim-web-devicons'                -- Add nerdfont icons to vim
   use 'kyazdani42/nvim-tree.lua'                    -- File tree view
-  use {'akinsho/bufferline.nvim', tag = "v2.*"}     -- Shows buffer as tabs
+  use {'akinsho/bufferline.nvim', tag = 'v2.*'}     -- Shows buffer as tabs
   use 'nvim-lualine/lualine.nvim'                   -- Fully customizable statusline
   use 'lukas-reineke/indent-blankline.nvim'         -- Indentation marks
   use 'fgheng/winbar.nvim'
-  use { "christianchiarulli/nvim-gps", branch = "text_hl" }
+  use { "christianchiarulli/nvim-gps", branch = 'text_hl' }
 
   -- IDE Utils
   use 'folke/which-key.nvim'                        -- Show keybindings in popup
@@ -76,6 +76,7 @@ return packer.startup(function(use)
   use 'rebelot/kanagawa.nvim'                       -- Almost kawabonga
   use 'lunarvim/colorschemes'                       -- A bunch of colorschemes you can try out
   use 'shaunsingh/nord.nvim'                        -- Them mitic cold theme
+  use { 'catppuccin/nvim', as = 'catppuccin' }      -- Pastel based colorscheme
 
 
   -- Cmp plugins

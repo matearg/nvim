@@ -1,5 +1,5 @@
-local colorscheme = "kanagawa"
---[[ aurora, codemonkey, darkplus, dracula, ferrum, gruvbox-baby,
+local colorscheme = "catppuccin"
+--[[ aurora, catppuccin, codemonkey, darkplus, dracula, ferrum, gruvbox-baby,
 kanagawa, lunar, nord, onedark, onedarker, onedarkest, onenord, spacedark,
 system76, tokyonight, zephyr ]]
 
