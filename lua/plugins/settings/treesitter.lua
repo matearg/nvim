@@ -6,7 +6,7 @@ end
 treesitter.setup {
   ensure_installed = "all",             -- One of "all", "maintained" (parsers with maintainers), or a list of languages
   sync_install = false,                 -- Install languages synchronously (only applied to `ensure_installed`)
-  ignore_install = { "phpdoc" },        -- List of parsers to ignore installing
+  ignore_install = { "" },        -- List of parsers to ignore installing
   autopairs = {
     enable = true,
   },

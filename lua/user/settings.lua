@@ -9,6 +9,9 @@ local options = {
   showcmd = true,               -- Show command in status line
   ruler = true,                 -- Show a ruler
   encoding = "utf-8",           -- Set encoding
+  fileencoding = "utf-8",       -- Set fileencoding
+  conceallevel = 0,             -- To see in markdown files
+  completeopt = { "menuone", "noselect" },
   showmatch = true,             -- Show matching brackets
   shiftwidth = 4,               -- Set shiftwidth to 4
   tabstop = 4,                  -- Set tabstop to 4
@@ -29,7 +32,6 @@ local options = {
   swapfile = false,             -- Disable swapfile
   writebackup = false,          -- Disable writebackup
   updatetime = 50,              -- Set update time to 50
-  shortmess = "c",              -- Show messages in the status line
   compatible = false,           -- Disable vim compatibility
   hlsearch = false,             -- Dont highlight matches
   incsearch = true,             -- Incremental searching
@@ -49,3 +51,4 @@ for key, value in pairs(options) do
 end
 
 vim.opt.iskeyword:append "-"    -- This-is-one-word
+vim.opt.shortmess:append "c"    -- Show messages in the status line
