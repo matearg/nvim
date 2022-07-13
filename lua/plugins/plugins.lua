@@ -75,6 +75,7 @@ return packer.startup(function(use)
   use { 'luisiacc/gruvbox-baby', branch = 'main' }  -- Gruvbox based theme
   use 'rebelot/kanagawa.nvim'                       -- Almost kawabonga
   use 'lunarvim/colorschemes'                       -- A bunch of colorschemes you can try out
+  use 'shaunsingh/nord.nvim'                        -- Them mitic cold theme
 
 
   -- Cmp plugins

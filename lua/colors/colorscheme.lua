@@ -1,6 +1,6 @@
-local colorscheme = "aurora"
+local colorscheme = "nord"
 --[[ aurora, codemonkey, darkplus, dracula, ferrum, gruvbox-baby,
-kanagawa, lunar, onedark, onedarker, onedarkest, onenord, spacedark,
+kanagawa, lunar, nord, onedark, onedarker, onedarkest, onenord, spacedark,
 system76, tokyonight, zephyr ]]
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
