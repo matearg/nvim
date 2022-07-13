@@ -9,7 +9,7 @@ local servers = {
   "pyright",
   "jsonls",
   "yamlls",
-  "clangd",
+  -- "clangd",
   "powershell_es",
   "vimls",
 }
@@ -37,6 +37,11 @@ for _, server in pairs(servers) do
   if server == "pyright" then
     local pyright_opts = require "plugins.settings.lsp.settings.pyright"
     opts = vim.tbl_deep_extend("force", pyright_opts, opts)
+  end
+
+  if server == "jsonls" then
+    local jsonls_opts = require "plugins.settings.lsp.settings.jsonls"
+    opts = vim.tbl_deep_extend("force", jsonls_opts, opts)
   end
 
   lspconfig[server].setup(opts)
