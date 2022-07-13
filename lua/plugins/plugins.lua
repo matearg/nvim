@@ -66,16 +66,16 @@ return packer.startup(function(use)
   use 'windwp/nvim-autopairs'                       -- Autopairs, integrates with both cmp and treesitter
 
   -- Colorschemes
-  use 'navarasu/onedark.nvim'                       -- OneDark colorscheme
+  -- use 'navarasu/onedark.nvim'                       -- OneDark colorscheme
   use 'LunarVim/darkplus.nvim'                      -- VSCode-like colorscheme
   use 'folke/tokyonight.nvim'                       -- Tokyonight colorscheme
-  use 'rmehri01/onenord.nvim'                       -- OneDark + Nord = OneNord colorscheme
-  -- use 'shaunsingh/moonlight.nvim'                   -- Darkblue based theme
+  -- use 'rmehri01/onenord.nvim'                       -- OneDark + Nord = OneNord colorscheme
   use 'glepnir/zephyr-nvim'                         -- Warm colorscheme
-  -- use 'shaunsingh/nord.nvim'                        -- You alredy know nord
   use 'Mofiqul/dracula.nvim'                        -- It'll bite you
   use { 'luisiacc/gruvbox-baby', branch = 'main' }  -- Gruvbox based theme
   use "rebelot/kanagawa.nvim"                       -- Almost kawabonga
+  use "lunarvim/colorschemes"                       -- A bunch of colorschemes you can try out
+
 
   -- Cmp plugins
   use 'hrsh7th/nvim-cmp'                            -- The cmp compltetion plugin
