@@ -35,7 +35,7 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
 -- Move text up and down
 keymap("n", "<A-j>", ":m .+1<CR>==", opts)
-keymap("n", "<A-k>", ":m .-2<CR>==", opts)--
+keymap("n", "<A-k>", ":m .-2<CR>==", opts)
 
 -- Better paste
 keymap("v", "p", '"_dP', opts)
@@ -47,7 +47,7 @@ keymap("i", "jk", "<ESC>", opts)
 -- Visual --
 -- Move text up and down
 keymap("v", "<A-j>", ":m .+1<CR>==", opts)
-keymap("v", "<A-k>", ":m .-2<CR>==", opts)--
+keymap("v", "<A-k>", ":m .-2<CR>==", opts)
 
 -- Comment
 keymap("n", "<leader>/", "<cmd>lua require('Comment.api').toggle_current_linewise()<CR>", opts)
