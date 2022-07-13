@@ -1,6 +1,4 @@
 -- Eviline config for lualine
--- Author: shadmansaleh
--- Credit: glepnir
 local lualine = require('lualine')
 
 -- Color table for highlights
@@ -84,7 +82,7 @@ ins_left {
   function()
     return '▊'
   end,
-  color = function()
+  --[[ color = function()
     local mode_color = {
       n = colors.blue,
       i = colors.green,
@@ -108,8 +106,8 @@ ins_left {
       t = colors.cyan,
     }
     return { fg = mode_color[vim.fn.mode()] }
-  end,
-  -- color = { fg = colors.blue },          -- Sets highlighting of component
+  end, ]]
+  color = { fg = colors.blue },          -- Sets highlighting of component
   padding = { left = 0, right = 1 },    -- We don't need space before this
 }
 
@@ -118,7 +116,7 @@ ins_left {
   function()
     return ''
   end,
-  --[[ color = function()
+  color = function()
     local mode_color = {
       n = colors.red,
       i = colors.green,
@@ -142,8 +140,8 @@ ins_left {
       t = colors.red,
     }
     return { fg = mode_color[vim.fn.mode()] }
-  end, ]]
-  color = { fg = colors.red },          -- Sets highlighting of component
+  end,
+  -- color = { fg = colors.red },          -- Sets highlighting of component
   padding = { right = 1 },
 }
 
@@ -209,7 +207,8 @@ ins_left {
     end
     return msg
   end,
-  icon = ' LSP:',
+  -- icon = ' LSP:',
+  icon = '',
   color = { fg = colors.lightcyan, gui = 'bold' },
 }
 
@@ -221,12 +220,12 @@ ins_right {
   color = { fg = colors.green, gui = 'bold' },
 }
 
-ins_right {
+--[[ ins_right {
   'fileformat',
   fmt = string.upper,
   icons_enabled = false,                 -- I think icons are cool but Eviline doesn't have them. sigh
   color = { fg = colors.green, gui = 'bold' },
-}
+} ]]
 
 ins_right {
   'branch',
@@ -250,7 +249,7 @@ ins_right {
   function()
     return '▊'
   end,
-  color = function()
+  --[[ color = function()
     local mode_color = {
       n = colors.blue,
       i = colors.green,
@@ -274,8 +273,8 @@ ins_right {
       t = colors.cyan,
     }
     return { fg = mode_color[vim.fn.mode()] }
-  end,
-  -- color = { fg = colors.blue },          -- Sets highlighting of component
+  end, ]]
+  color = { fg = colors.blue },          -- Sets highlighting of component
   padding = { left = 1 },
 }
 
