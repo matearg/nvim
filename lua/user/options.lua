@@ -1,4 +1,4 @@
--- Basic settings
+-- General settings
 local options = {
   syntax = "on",                -- Enable syntax highlighting
   number = true,                -- Show line numbers
