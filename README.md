@@ -10,9 +10,9 @@ NeoVim written in lua config files
 
 > Install in order
 
-- [Windows Terminal Preview](https://github.com/microsoft/terminal) (Windows Only)
-- [Powershell 7.+](https://github.com/) (Windows Only)
-- [PSReadLine](https://github.com/PowerShell/PSReadLine) (Window Only)
+- [Windows Terminal Preview](https://github.com/microsoft/terminal)
+- [Powershell 7.+](https://github.com/)
+- [PSReadLine](https://github.com/PowerShell/PSReadLine)
 - [Scoop](https://scoop.sh/)
 
 ## Setup
@@ -59,6 +59,27 @@ LspInstall clangd html jsonls powershell_es pyright rust_analyzer sumneko_lua ts
 ```
 
 Run `. $PROFILE` in the terminal to reload your powershell profile
+
+## Optional alacritty installation:
+
+```ps1
+mkdir ~/AppData/Roaming/alacritty
+ni ~/AppData/Roaming/alacritty/alacritty.yml
+cd ~/AppData/Roaming/alacritty
+```
+
+> Put in alacritty.yml:
+
+```yml
+import:
+  - ~/github/dotfiles/alacritty.yml
+```
+> Run and follow the instructions:
+
+```ps1
+cargo install alacritty
+npm i -g alacritty-themes
+```
 
 ### TODO
 
