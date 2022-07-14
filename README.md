@@ -2,8 +2,8 @@
 
 NeoVim written in lua config files
 
-- For LSP:
+- For LSP;
 
 ```
-LspInstall clangd jsonls powershell_es pyright sumneko_lua tsserver yamlls vimls
+LspInstall clangd html jsonls powershell_es pyright rust_analyzer sumneko_lua tsserver yamlls vimls
 ```
