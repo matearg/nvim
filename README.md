@@ -27,7 +27,7 @@ scoop bucket add versions
 scoop update
 ```
 
-2. Clone my [dotfiles](https://github.com/matearg/dotfiles)
+2. Clone my [dotfiles](https://github.com/matearg/dotfiles) (Required!!)
 
 3. Copy in your `$PROFILE` (Windows Only)
 
