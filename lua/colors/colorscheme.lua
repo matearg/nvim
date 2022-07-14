@@ -9,7 +9,7 @@ require "colors.color-configs.nord"
 require "colors.color-configs.tokyonight"
 
 -- Set your colorscheme
-local colorscheme = "system76"
+local colorscheme = "nord"
 --[[ aurora, catppuccin, codemonkey, darkplus, dracula, ferrum, gruvbox-baby,
 kanagawa, lunar, nord, onedark, onedarker, onedarkest, onenord, spacedark,
 system76, tokyonight, zephyr ]]
