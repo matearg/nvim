@@ -8,8 +8,6 @@ NeoVim written in lua config files
 
 ## Requirements
 
-> Install in order
-
 - [Windows Terminal Preview](https://github.com/microsoft/terminal)
 - [Powershell 7.+](https://github.com/)
 - [PSReadLine](https://github.com/PowerShell/PSReadLine)
@@ -42,7 +40,7 @@ scoop install 7zip bat clangd cmake coreutils dark delta fd gcc lazygit less lua
 ```
 > Follow all the NOTES sections after the installs
 
-> For neovim:
+- For neovim:
 
 ```ps1
 cd ~/AppData/Local
@@ -52,7 +50,7 @@ git clone https://github.com/matearg/nvim.git
 9. Open neovim and wait until your plugins get installed. Close nvim
 
 10. Reopen nvim and check if your lsp servers are installed `:LspInfo`
-> If not run
+- If not run:
 
 ```
 LspInstall clangd html jsonls powershell_es pyright rust_analyzer sumneko_lua tsserver yamlls vimls
@@ -68,13 +66,13 @@ ni ~/AppData/Roaming/alacritty/alacritty.yml
 cd ~/AppData/Roaming/alacritty
 ```
 
-> Put in alacritty.yml:
+- Put in alacritty.yml:
 
 ```yml
 import:
   - ~/github/dotfiles/alacritty.yml
 ```
-> Run and follow the instructions:
+- Run and follow the instructions:
 
 ```ps1
 cargo install alacritty
