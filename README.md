@@ -1,6 +1,6 @@
 # NeoVim Configurations
 
-NeoVim written in lua config files 
+NeoVim lua config files 
 
 ## Dotfiles
 
