@@ -46,38 +46,36 @@ return packer.startup(function(use)
   use 'nvim-lua/popup.nvim'                         -- An implementation of the Popup API from vim in Neovim
   use 'nvim-lua/plenary.nvim'                       -- Useful lua functions used in lots of plugins
   use 'lewis6991/impatient.nvim'                    -- Improve vim loading speeds
-  use "numToStr/Comment.nvim"                       -- Easily comment stuff
 
   -- Visuals
   use 'kyazdani42/nvim-web-devicons'                -- Add nerdfont icons to vim
   use 'kyazdani42/nvim-tree.lua'                    -- File tree view
-  use {'akinsho/bufferline.nvim', tag = 'v2.*'}     -- Shows buffer as tabs
+  use { 'akinsho/bufferline.nvim', tag = 'v2.*' }   -- Shows buffer as tabs
   use 'nvim-lualine/lualine.nvim'                   -- Fully customizable statusline
   use 'lukas-reineke/indent-blankline.nvim'         -- Indentation marks
   use 'fgheng/winbar.nvim'
   use { "christianchiarulli/nvim-gps", branch = 'text_hl' }
+  use 'goolord/alpha-nvim'                          -- Alpha is a dashboard-like plugin
 
   -- IDE Utils
   use 'folke/which-key.nvim'                        -- Show keybindings in popup
   use 'voldikss/vim-floaterm'                       -- A floating terminal
   use 'moll/vim-bbye'                               -- A simple way to close vim buffers
-  use 'tpope/vim-commentary'                        -- Comment with a keybinding
-  use 'goolord/alpha-nvim'                          -- Alpha is a dashboard-like plugin
+  use "numToStr/Comment.nvim"                       -- Easily comment stuff
   use 'norcalli/nvim-colorizer.lua'                 -- Add css colors
   use 'windwp/nvim-autopairs'                       -- Autopairs, integrates with both cmp and treesitter
 
   -- Colorschemes
-  -- use 'navarasu/onedark.nvim'                       -- OneDark colorscheme
+  use { 'catppuccin/nvim', as = 'catppuccin' }      -- Pastel based colorscheme
   use 'LunarVim/darkplus.nvim'                      -- VSCode-like colorscheme
-  use 'folke/tokyonight.nvim'                       -- Tokyonight colorscheme
-  -- use 'rmehri01/onenord.nvim'                       -- OneDark + Nord = OneNord colorscheme
-  use 'glepnir/zephyr-nvim'                         -- Warm colorscheme
   use 'Mofiqul/dracula.nvim'                        -- It'll bite you
   use { 'luisiacc/gruvbox-baby', branch = 'main' }  -- Gruvbox based theme
   use 'rebelot/kanagawa.nvim'                       -- Almost kawabonga
-  use 'lunarvim/colorschemes'                       -- A bunch of colorschemes you can try out
-  use 'shaunsingh/nord.nvim'                        -- Them mitic cold theme
-  use { 'catppuccin/nvim', as = 'catppuccin' }      -- Pastel based colorscheme
+  use 'shaunsingh/nord.nvim'                        -- The mitic cold theme
+  use 'navarasu/onedark.nvim'                       -- OneDark colorscheme
+  use 'rmehri01/onenord.nvim'                       -- OneDark + Nord = OneNord colorscheme
+  use 'folke/tokyonight.nvim'                       -- Tokyonight colorscheme
+  use 'glepnir/zephyr-nvim'                         -- Warm colorscheme
 
 
   -- Cmp plugins
