@@ -75,6 +75,20 @@ function M.toggle_tabline()
   vim.notify("showtabline" .. " set to " .. tostring(value))
 end
 
+function M.toggle_spaces()
+  local value = vim.api.nvim_get_option_value("shiftwidth", {})
+
+  if value == 2 then
+    value = 4
+  else
+    value = 2
+  end
+
+  vim.opt.shiftwidth = value
+
+  vim.notify("Indent spaces" .. " set to " .. tostring(value))
+end
+
 function M.toggle_colorcolumn()
   local value = vim.api.nvim_get_option_value("colorcolumn", {})
 
