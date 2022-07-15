@@ -1,6 +1,6 @@
 # NeoVim Configurations
 
-NeoVim written in lua config files
+NeoVim config files
 
 - For LSP:
 
