@@ -7,7 +7,6 @@ local servers = {
   "clangd",
   "html",
   "jsonls",
-  "powershell_es",
   "pyright",
   "rust_analyzer",
   "sumneko_lua",
@@ -17,7 +16,7 @@ local servers = {
 }
 
 lsp_installer.setup {
-  ensure_installed = { "clangd", "html", "jsonls", "powershell_es", "pyright", "rust_analyzer", "sumneko_lua", "tsserver", "yamlls", "vimls" },
+  ensure_installed = { "clangd", "html", "jsonls", "pyright", "rust_analyzer", "sumneko_lua", "tsserver", "yamlls", "vimls" },
 
   ui = {
     -- Whether to automatically check for outdated servers when opening the UI window.

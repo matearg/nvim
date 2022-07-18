@@ -107,7 +107,7 @@ local mappings = {
     t = { '<cmd>lua require("plugins.settings.functions").toggle_tabline()<cr>', "Tabline" },
     c = { '<cmd>lua require("plugins.settings.functions").toggle_colorcolumn()<cr>', "ColorColumn" },
     i = { '<cmd>lua require("plugins.settings.functions").toggle_spaces()<cr>', "Spaces" },
-    s = { '<cmd>:e ~/AppData/Local/nvim/init.lua<cr>', "Settings" },
+    s = { '<cmd>:e ~/.config/nvim/init.lua<cr>', "Settings" },
   },
 
   g = {
