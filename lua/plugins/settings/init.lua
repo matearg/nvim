@@ -1,5 +1,5 @@
 -- Comment to disable plugins
-require "plugins.settings.alpha"
+-- require "plugins.settings.alpha"
 require "plugins.settings.autopairs"
 require "plugins.settings.bufferline"
 require "plugins.settings.cmp"
