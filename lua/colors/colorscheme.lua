@@ -5,6 +5,7 @@ require "colors.color-configs"
 -- darkplus
 -- dracula
 -- gruvbox-baby
+-- gruvbox-material
 -- kanagawa
 -- nord
 -- onedark
@@ -12,7 +13,7 @@ require "colors.color-configs"
 -- tokyonight
 -- zephyr
 
-local colorscheme = "gruvbox-baby"
+local colorscheme = "gruvbox-material"
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 if not status_ok then

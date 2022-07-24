@@ -76,6 +76,7 @@ return packer.startup(function(use)
   use 'rmehri01/onenord.nvim'                       -- OneDark + Nord = OneNord colorscheme
   use 'folke/tokyonight.nvim'                       -- Tokyonight colorscheme
   use 'glepnir/zephyr-nvim'                         -- Warm colorscheme
+  use 'sainnhe/gruvbox-material'
 
 
   -- Cmp plugins
