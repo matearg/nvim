@@ -13,7 +13,7 @@ require "colors.color-configs"
 -- tokyonight
 -- zephyr
 
-local colorscheme = "gruvbox-material"
+local colorscheme = "onenord"
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 if not status_ok then
