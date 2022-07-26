@@ -5,4 +5,4 @@ end
 
 require("plugins.settings.lsp.lsp-installer")
 require("plugins.settings.lsp.handlers").setup()
-require "plugins.settings.lsp.colors"
+-- require "plugins.settings.lsp.colors"
