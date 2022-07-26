@@ -3,17 +3,10 @@ require "colors.color-configs"
 -- Avalible colorschemes:
 -- catppuccin
 -- darkplus
--- dracula
--- gruvbox-baby
 -- gruvbox-material
--- kanagawa
--- nord
 -- onedark
--- onenord
--- tokyonight
--- zephyr
 
-local colorscheme = "darkplus"
+local colorscheme = "catppuccin"
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 if not status_ok then

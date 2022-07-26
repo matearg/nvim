@@ -209,7 +209,7 @@ ins_left {
   end,
   -- icon = ' LSP:',
   icon = '',
-  color = { fg = colors.lightcyan, gui = 'bold' },
+  color = { fg = colors.fg, gui = 'bold' },
 }
 
 -- Add components to right sections

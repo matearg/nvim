@@ -66,14 +66,10 @@ return packer.startup(function(use)
   use 'windwp/nvim-autopairs'                       -- Autopairs, integrates with both cmp and treesitter
 
   -- Colorschemes
-  -- use { 'catppuccin/nvim', as = 'catppuccin' }      -- Pastel based colorscheme
+  use { 'catppuccin/nvim', as = 'catppuccin' }
   use 'LunarVim/darkplus.nvim'                      -- VSCode-like colorscheme
-  -- use 'Mofiqul/dracula.nvim'                        -- It'll bite you
-  -- use { 'luisiacc/gruvbox-baby', branch = 'main' }  -- Gruvbox based theme
-  -- use 'rebelot/kanagawa.nvim'                       -- Almost kawabonga
-  -- use 'shaunsingh/nord.nvim'                        -- The mitic cold theme
   use 'navarasu/onedark.nvim'                       -- OneDark colorscheme
-  use 'rmehri01/onenord.nvim'                       -- OneDark + Nord = OneNord colorscheme
+  -- use 'rmehri01/onenord.nvim'                       -- OneDark + Nord = OneNord colorscheme
   -- use 'folke/tokyonight.nvim'                       -- Tokyonight colorscheme
   -- use 'glepnir/zephyr-nvim'                         -- Warm colorscheme
   use 'sainnhe/gruvbox-material'
