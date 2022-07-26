@@ -66,16 +66,17 @@ return packer.startup(function(use)
   use 'windwp/nvim-autopairs'                       -- Autopairs, integrates with both cmp and treesitter
 
   -- Colorschemes
-  use { 'catppuccin/nvim', as = 'catppuccin' }      -- Pastel based colorscheme
+  -- use { 'catppuccin/nvim', as = 'catppuccin' }      -- Pastel based colorscheme
   use 'LunarVim/darkplus.nvim'                      -- VSCode-like colorscheme
-  use 'Mofiqul/dracula.nvim'                        -- It'll bite you
-  use { 'luisiacc/gruvbox-baby', branch = 'main' }  -- Gruvbox based theme
-  use 'rebelot/kanagawa.nvim'                       -- Almost kawabonga
-  use 'shaunsingh/nord.nvim'                        -- The mitic cold theme
+  -- use 'Mofiqul/dracula.nvim'                        -- It'll bite you
+  -- use { 'luisiacc/gruvbox-baby', branch = 'main' }  -- Gruvbox based theme
+  use 'sainnhe/gruvbox-material'
+  -- use 'rebelot/kanagawa.nvim'                       -- Almost kawabonga
+  -- use 'shaunsingh/nord.nvim'                        -- The mitic cold theme
   use 'navarasu/onedark.nvim'                       -- OneDark colorscheme
   use 'rmehri01/onenord.nvim'                       -- OneDark + Nord = OneNord colorscheme
-  use 'folke/tokyonight.nvim'                       -- Tokyonight colorscheme
-  use 'glepnir/zephyr-nvim'                         -- Warm colorscheme
+  -- use 'folke/tokyonight.nvim'                       -- Tokyonight colorscheme
+  -- use 'glepnir/zephyr-nvim'                         -- Warm colorscheme
 
 
   -- Cmp plugins
@@ -107,7 +108,7 @@ return packer.startup(function(use)
   -- Lsp
   use 'neovim/nvim-lspconfig'                       -- LSP
   use 'williamboman/nvim-lsp-installer'             -- An easy way to install language servers
-  use 'folke/lsp-colors.nvim'                       -- Creates missing LSP diagnostics highlight
+  -- use 'folke/lsp-colors.nvim'                       -- Creates missing LSP diagnostics highlight
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
