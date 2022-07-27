@@ -208,7 +208,7 @@ ins_left {
     return msg
   end,
   -- icon = ' LSP:',
-  icon = '',
+  icon = ' ',
   color = { fg = colors.fg, gui = 'bold' },
 }
 
