@@ -4,6 +4,7 @@ if not status_ok then
 end
 
 local servers = {
+  "bashls",
   "clangd",
   "html",
   "jsonls",
@@ -16,7 +17,7 @@ local servers = {
 }
 
 lsp_installer.setup {
-  ensure_installed = { "clangd", "html", "jsonls", "pyright", "rust_analyzer", "sumneko_lua", "tsserver", "yamlls", "vimls" },
+  ensure_installed = { "bashls", "clangd", "html", "jsonls", "pyright", "rust_analyzer", "sumneko_lua", "tsserver", "yamlls", "vimls" },
 
   ui = {
     -- Whether to automatically check for outdated servers when opening the UI window.
